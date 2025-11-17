@@ -36,8 +36,8 @@ echo ""
 mkdir -p "$OUTPUT_DIR"
 
 # Extract project info from config
-PROJECT_NAME=$(grep "^project_name:" "$CONFIG_FILE" 2>/dev/null | cut -d: -f2- | sed 's/^[[:space:]]*//' || echo "Strategic Research")
-INDUSTRY=$(grep "^industry:" "$CONFIG_FILE" 2>/dev/null | cut -d: -f2- | sed 's/^[[:space:]]*//' | sed 's/"//g' || echo "Technology")
+PROJECT_NAME=$(grep "name:" "$CONFIG_FILE" | grep -v "^#" | head -1 | cut -d: -f2- | sed 's/^[[:space:]]*"//' | sed 's/".*$//' | sed 's/#.*//' | xargs || echo "Strategic Research")
+INDUSTRY=$(grep "industry:" "$CONFIG_FILE" | grep -v "^#" | head -1 | cut -d: -f2- | sed 's/^[[:space:]]*"//' | sed 's/".*$//' | sed 's/#.*//' | xargs || echo "Technology")
 # Clean up template placeholders if config wasn't initialized
 INDUSTRY=$(echo "$INDUSTRY" | sed 's/{{.*}}/Technology/g')
 
