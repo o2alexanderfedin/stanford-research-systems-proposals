@@ -52,8 +52,9 @@ For HTML:
 pandoc reports/$1-*-report.md -o reports/$1-*-report.html \
   --standalone \
   --toc \
-  --css=templates/report-styles.css \
-  --self-contained
+  --embed-resources \
+  --include-in-header=templates/mermaid-header.html \
+  --metadata title="Strategic Research Report: Sprint $1"
 ```
 
 ### Step 4: Validate Export
