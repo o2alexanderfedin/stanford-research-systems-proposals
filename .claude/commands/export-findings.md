@@ -53,6 +53,7 @@ pandoc reports/$1-*-report.md -o reports/$1-*-report.html \
   --standalone \
   --toc \
   --embed-resources \
+  --css=templates/report-styles.css \
   --include-in-header=templates/mermaid-header.html \
   --metadata title="Strategic Research Report: Sprint $1"
 ```
