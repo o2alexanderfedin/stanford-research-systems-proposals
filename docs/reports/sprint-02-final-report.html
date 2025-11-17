@@ -100,6 +100,21 @@ td:first-child {
 min-width: 150px;
 }
 
+ol, ul {
+margin: 1em 0;
+padding-left: 2em;
+}
+li {
+margin: 0.5em 0;
+line-height: 1.8;
+}
+li p {
+margin: 0.25em 0;
+}
+ol ol, ul ul, ol ul, ul ol {
+margin: 0.5em 0;
+}
+
 code {
 background-color: #f5f5f5;
 padding: 2px 6px;
@@ -445,21 +460,31 @@ budget achievable ≤ 2× manual method).</p>
 <hr />
 <h2 id="market-opportunity-analysis">Market Opportunity Analysis</h2>
 <h3 id="market-sizing-and-growth">Market Sizing and Growth</h3>
-<p><strong>Total Addressable Market (TAM)</strong>: - Global calibration
-services: <strong>$5.3B (2023) → $7.9B (2030)</strong> at 5.9% CAGR
-(MarketsandMarkets 2025) - Calibration automation software: ~35% of
-services market = <strong>$1.9B (2023) → $2.8B (2030)</strong> - With
-Industry 4.0/AI trends: <strong>+2-3% additional CAGR</strong> → 7-9%
-total TAM growth</p>
-<p><strong>Serviceable Addressable Market (SAM)</strong>: -
-Ultra-precision calibration automation (sub-100 ppm accuracy
-requirements): <strong>$1.4-2.0B annually</strong> - Formal verification
-addressable (ultra-precision + regulated industries):
-<strong>$800M-1.2B</strong> - Key segments: - OEM precision instrument
-manufacturers: 25% (~$350-500M) - Accredited metrology laboratories: 30%
-(~$420-600M) - Manufacturing QC departments (pharma, aerospace,
-semiconductor): 25% (~$350-500M) - Calibration service providers: 15%
-(~$210-300M) - Contract manufacturing organizations: 5% (~$70-100M)</p>
+<p><strong>Total Addressable Market (TAM)</strong>:</p>
+<ul>
+<li>Global calibration services: <strong>$5.3B (2023) → $7.9B
+(2030)</strong> at 5.9% CAGR (MarketsandMarkets 2025)</li>
+<li>Calibration automation software: ~35% of services market =
+<strong>$1.9B (2023) → $2.8B (2030)</strong></li>
+<li>With Industry 4.0/AI trends: <strong>+2-3% additional CAGR</strong>
+→ 7-9% total TAM growth</li>
+</ul>
+<p><strong>Serviceable Addressable Market (SAM)</strong>:</p>
+<ul>
+<li>Ultra-precision calibration automation (sub-100 ppm accuracy
+requirements): <strong>$1.4-2.0B annually</strong></li>
+<li>Formal verification addressable (ultra-precision + regulated
+industries): <strong>$800M-1.2B</strong></li>
+<li>Key segments:
+<ul>
+<li>OEM precision instrument manufacturers: 25% (~$350-500M)</li>
+<li>Accredited metrology laboratories: 30% (~$420-600M)</li>
+<li>Manufacturing QC departments (pharma, aerospace, semiconductor): 25%
+(~$350-500M)</li>
+<li>Calibration service providers: 15% (~$210-300M)</li>
+<li>Contract manufacturing organizations: 5% (~$70-100M)</li>
+</ul></li>
+</ul>
 <p><strong>Serviceable Obtainable Market (SOM)</strong> (5-year
 horizon): - Year 1-2: 2-3% penetration = <strong>$16-36M
 cumulative</strong> - Year 5: 10-15% penetration = <strong>$80-180M
@@ -607,12 +632,17 @@ Scenario):</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Notes</strong>: - Year 1 OEM revenue reflects SRS partnership
-integration fee ($2M upfront) - Maintenance revenue compounds as
-installed base expands (177% CAGR demonstrates recurring revenue growth)
-- Enterprise deployments accelerate Year 3+ after FDA validation and ISO
-17025 accreditation - Diversification improves over time: OEM dependency
-decreases from 76% (Year 1) to 50% (Year 5)</p>
+<p><strong>Notes</strong>:</p>
+<ul>
+<li>Year 1 OEM revenue reflects SRS partnership integration fee ($2M
+upfront)</li>
+<li>Maintenance revenue compounds as installed base expands (177% CAGR
+demonstrates recurring revenue growth)</li>
+<li>Enterprise deployments accelerate Year 3+ after FDA validation and
+ISO 17025 accreditation</li>
+<li>Diversification improves over time: OEM dependency decreases from
+76% (Year 1) to 50% (Year 5)</li>
+</ul>
 <p><strong>Pricing Strategy</strong> (Value-Based, Not Cost-Plus): -
 <strong>Per-Instrument Licenses</strong>: $10K-50K based on precision
 tier (Premium/Professional/Standard) - Premium (&lt; 1 ppm): $40K-50K
@@ -624,13 +654,19 @@ industry standard) - <strong>OEM Integration</strong>: $500K-2M (Tier 1
 strategic: $1.5-2M with exclusivity; Tier 2 enterprise: $750K-1.5M; Tier
 3 standard: $500K-750K) - <strong>Volume Discounts</strong>: 10% (6-10
 instruments), 20% (11-20), 30% (21+) to encourage large deployments</p>
-<p><strong>Gross Margin Profile</strong>: - <strong>Blended Gross
-Margin</strong>: 70-75% (typical enterprise software) - Per-instrument
-licenses: 85-90% (pure software margin) - Annual maintenance: 75-80%
-(support staff costs) - OEM integration: 60-70% (custom development
-labor) - Services/training: 50-60% (labor-intensive delivery) -
-<strong>Margin Improvement</strong>: 60-65% (Year 1-2, higher services
-mix) → 75-80% (Year 5+, mature product leverage)</p>
+<p><strong>Gross Margin Profile</strong>:</p>
+<ul>
+<li><strong>Blended Gross Margin</strong>: 70-75% (typical enterprise
+software)
+<ul>
+<li>Per-instrument licenses: 85-90% (pure software margin)</li>
+<li>Annual maintenance: 75-80% (support staff costs)</li>
+<li>OEM integration: 60-70% (custom development labor)</li>
+<li>Services/training: 50-60% (labor-intensive delivery)</li>
+</ul></li>
+<li><strong>Margin Improvement</strong>: 60-65% (Year 1-2, higher
+services mix) → 75-80% (Year 5+, mature product leverage)</li>
+</ul>
 <hr />
 <h2 id="technical-feasibility-assessment">Technical Feasibility
 Assessment</h2>
@@ -647,20 +683,29 @@ Formal verification of trading algorithms and risk models -
 <strong>Assessment</strong>: <strong>Mature, battle-tested
 technology</strong> with no fundamental research breakthroughs
 required</p>
-<p><strong>Calibration Domain Suitability</strong>: -
-<strong>Mathematical Characteristics</strong>: - Calibration algorithms
-primarily <strong>linear/polynomial transformations</strong> (map
-naturally to SMT arithmetic theories) - Uncertainty quantification
-follows <strong>GUM methodology</strong> (standardized framework for
-modeling) - Measurement equations are <strong>well-defined,
+<p><strong>Calibration Domain Suitability</strong>:</p>
+<ul>
+<li><strong>Mathematical Characteristics</strong>:
+<ul>
+<li>Calibration algorithms primarily <strong>linear/polynomial
+transformations</strong> (map naturally to SMT arithmetic theories)</li>
+<li>Uncertainty quantification follows <strong>GUM methodology</strong>
+(standardized framework for modeling)</li>
+<li>Measurement equations are <strong>well-defined,
 deterministic</strong> relationships (vs. complex multi-physics
-simulations) - <strong>SMT-LIB Standard Compliance</strong>: -
-Industry-standard SMT-LIB 2.6 format ensures <strong>portability across
-solvers</strong> (Z3, CVC5, Alt-Ergo) - Prevents vendor lock-in, allows
-customer solver choice based on performance/licensing/certification
-needs - <strong>Assessment</strong>: Calibration is an <strong>ideal
+simulations)</li>
+</ul></li>
+<li><strong>SMT-LIB Standard Compliance</strong>:
+<ul>
+<li>Industry-standard SMT-LIB 2.6 format ensures <strong>portability
+across solvers</strong> (Z3, CVC5, Alt-Ergo)</li>
+<li>Prevents vendor lock-in, allows customer solver choice based on
+performance/licensing/certification needs</li>
+</ul></li>
+<li><strong>Assessment</strong>: Calibration is an <strong>ideal
 application domain</strong> for SMT-based formal verification (better
-than average feasibility)</p>
+than average feasibility)</li>
+</ul>
 <h3 id="system-architecture-overview">System Architecture Overview</h3>
 <p><strong>High-Level Architecture</strong> (Verification-First
 Design):</p>
@@ -700,25 +745,34 @@ Design):</p>
     SOLVER &lt;--&gt; CACHE
     CERT --&gt; TIME_DB
     SIGN --&gt; GRAPH_DB</code></pre>
-<p><strong>Key Architectural Decisions</strong>: 1.
-<strong>Verification-First</strong>: Formal verification at center of
-architecture (not post-processing add-on), with verification gates at
-pre-calibration, real-time monitoring, and post-calibration 2.
-<strong>Hybrid Deployment</strong>: Support both on-premise (air-gapped
-metrology labs) and cloud SaaS (calibration service providers) with
-unified codebase 3. <strong>SMT-LIB Standard</strong>: All calibration
-models in SMT-LIB 2.6 format for portability and customer
-flexibility</p>
-<p><strong>Performance Targets and Scalability</strong>: -
-<strong>Verification Latency (P95)</strong>: &lt; 60 seconds (target
-&lt; 1 minute for production use) - <strong>Verification
-Throughput</strong>: &gt; 10,000/hour on 32-core cluster -
-<strong>Scalability Analysis</strong>: - Vertical scaling: Linear up to
-32 cores (SMT solver CPU-bound, ~100 concurrent verifications per node)
-- Horizontal scaling: Stateless workers enable linear scaling (database
-becomes bottleneck at ~500 workers, mitigated by read replicas) -
-Bottleneck mitigation: Verification cache (90% hit rate reduces load
-10×), parallel solver execution, batch database writes</p>
+<p><strong>Key Architectural Decisions</strong>:</p>
+<ol type="1">
+<li><strong>Verification-First</strong>: Formal verification at center
+of architecture (not post-processing add-on), with verification gates at
+pre-calibration, real-time monitoring, and post-calibration</li>
+<li><strong>Hybrid Deployment</strong>: Support both on-premise
+(air-gapped metrology labs) and cloud SaaS (calibration service
+providers) with unified codebase</li>
+<li><strong>SMT-LIB Standard</strong>: All calibration models in SMT-LIB
+2.6 format for portability and customer flexibility</li>
+</ol>
+<p><strong>Performance Targets and Scalability</strong>:</p>
+<ul>
+<li><strong>Verification Latency (P95)</strong>: &lt; 60 seconds (target
+&lt; 1 minute for production use)</li>
+<li><strong>Verification Throughput</strong>: &gt; 10,000/hour on
+32-core cluster</li>
+<li><strong>Scalability Analysis</strong>:
+<ul>
+<li>Vertical scaling: Linear up to 32 cores (SMT solver CPU-bound, ~100
+concurrent verifications per node)</li>
+<li>Horizontal scaling: Stateless workers enable linear scaling
+(database becomes bottleneck at ~500 workers, mitigated by read
+replicas)</li>
+<li>Bottleneck mitigation: Verification cache (90% hit rate reduces load
+10×), parallel solver execution, batch database writes</li>
+</ul></li>
+</ul>
 <h3 id="technical-risks-and-mitigation">Technical Risks and
 Mitigation</h3>
 <p><strong>High Risk: SMT Solver Performance</strong> (Likelihood: 40%,
@@ -780,15 +834,23 @@ calculation, no automated completeness checking 4. <strong>Tektronix,
 Rohde &amp; Schwarz, Small/Mid-Market</strong> (CompuCal, GAGEtrak,
 etc.): - Similar statistical methods, no formal verification
 capabilities</p>
-<p><strong>Industry Standard Approach (GUM Methodology)</strong>: -
-ISO/IEC Guide 98-3 (Guide to expression of Uncertainty in Measurement) -
-Statistical propagation of uncertainty using Root Sum of Squares (RSS) -
-<strong>Weaknesses</strong>: - Manual process for identifying
-uncertainty contributors (can miss sources) - Human judgment required
-for Type B uncertainties (subjective) - No verification that uncertainty
-budget is complete or mathematically correct - <strong>A2LA
-Evidence</strong>: 30-40% of calibration certificates contain
-uncertainty errors</p>
+<p><strong>Industry Standard Approach (GUM Methodology)</strong>:</p>
+<ul>
+<li>ISO/IEC Guide 98-3 (Guide to expression of Uncertainty in
+Measurement)</li>
+<li>Statistical propagation of uncertainty using Root Sum of Squares
+(RSS)</li>
+<li><strong>Weaknesses</strong>:
+<ul>
+<li>Manual process for identifying uncertainty contributors (can miss
+sources)</li>
+<li>Human judgment required for Type B uncertainties (subjective)</li>
+<li>No verification that uncertainty budget is complete or
+mathematically correct</li>
+<li><strong>A2LA Evidence</strong>: 30-40% of calibration certificates
+contain uncertainty errors</li>
+</ul></li>
+</ul>
 <h3 id="hupyys-unique-value-proposition">Hupyy’s Unique Value
 Proposition</h3>
 <p><strong>“Mathematically Proven Calibration Accuracy”</strong>
@@ -802,20 +864,27 @@ software verification: “probably correct” → “provably correct” -
 <strong>Customer Value</strong>: Audit defense (mathematical certainty),
 regulatory compliance (strongest possible evidence), customer confidence
 (ultra-precision applications)</p>
-<p><strong>2. Automated Expert-Level Validation</strong>: -
-<strong>Competitors</strong>: Manual review by senior metrologist (2-4
-hours, $200-600/calibration) - <strong>Hupyy</strong>: Automated formal
-verification (&lt; 1 minute, $10-50 amortized cost) -
-<strong>ROI</strong>: <strong>4:1 to 60:1</strong> on labor cost alone -
-<strong>Scalability</strong>: Software scales without headcount
-(competitor value proposition limited by metrologist availability)</p>
-<p><strong>3. Completeness Guarantee</strong>: -
-<strong>Competitors</strong>: Checklist-based uncertainty budgets (rely
-on human memory) - <strong>Hupyy</strong>: <strong>SMT solver enumerates
-all mathematical dependencies</strong> (proves no contributors missing)
-- <strong>Risk Elimination</strong>: Missing uncertainty sources
+<p><strong>2. Automated Expert-Level Validation</strong>:</p>
+<ul>
+<li><strong>Competitors</strong>: Manual review by senior metrologist
+(2-4 hours, $200-600/calibration)</li>
+<li><strong>Hupyy</strong>: Automated formal verification (&lt; 1
+minute, $10-50 amortized cost)</li>
+<li><strong>ROI</strong>: <strong>4:1 to 60:1</strong> on labor cost
+alone</li>
+<li><strong>Scalability</strong>: Software scales without headcount
+(competitor value proposition limited by metrologist availability)</li>
+</ul>
+<p><strong>3. Completeness Guarantee</strong>:</p>
+<ul>
+<li><strong>Competitors</strong>: Checklist-based uncertainty budgets
+(rely on human memory)</li>
+<li><strong>Hupyy</strong>: <strong>SMT solver enumerates all
+mathematical dependencies</strong> (proves no contributors missing)</li>
+<li><strong>Risk Elimination</strong>: Missing uncertainty sources
 discovered only in audit failures or customer complaints (Hupyy
-prevents)</p>
+prevents)</li>
+</ul>
 <p><strong>4. Real-Time Verification</strong> (Future Capability, Phase
 3+): - <strong>Competitors</strong>: Batch process (calibrate → review →
 certificate) - <strong>Hupyy</strong>: Real-time verification during
@@ -915,28 +984,41 @@ $20K (full A2LA assessment, potential reassessment if findings) -
 External services (3%): $12K (legal, compliance consulting) -
 Contingency (2%): $10K</p>
 <p><strong>Budget Adequacy Assessment</strong>:</p>
-<p><strong>Strengths</strong>: - <strong>Phased Deployment</strong>:
-Front-loads validation (Phase 1 = 30% of budget validates core
-technology before major scaling) - <strong>Reasonable Burn
-Rate</strong>: $830K ÷ 16 months = $52K/month (appropriate for 4-13
-person team with equipment) - <strong>Contingency</strong>: $20K total
-(2.4% of overall budget) is modest but Phase 1-2 have go/no-go gates
-allowing course correction</p>
-<p><strong>Risks</strong>: - <strong>Personnel Cost
-Assumptions</strong>: Assumes $100-120K/year loaded cost for engineers -
-<strong>Risk</strong>: SMT solver experts and metrologists command
-15-25% premiums in competitive talent market -
-<strong>Mitigation</strong>: Contractor support for peak needs, offshore
-development for non-critical components, heavy SRS partnership leverage
-(0.5-4.5 FTE contribution reduces Hupyy hiring) - <strong>Scope
-Creep</strong>: ISO 17025 corrective actions or customer feature
-requests may expand scope - <strong>Risk</strong>: Additional $20-50K
-for extended validation or regulatory compliance work -
-<strong>Mitigation</strong>: Change control process, contingency budget,
-option to extend Phase 3 by 1-2 months if needed - <strong>Equipment
-Failures</strong>: Precision test equipment can fail ($10-20K unbudgeted
-replacements) - <strong>Mitigation</strong>: Use SRS equipment where
-possible, $10K equipment contingency in Phase 1</p>
+<p><strong>Strengths</strong>:</p>
+<ul>
+<li><strong>Phased Deployment</strong>: Front-loads validation (Phase 1
+= 30% of budget validates core technology before major scaling)</li>
+<li><strong>Reasonable Burn Rate</strong>: $830K ÷ 16 months =
+$52K/month (appropriate for 4-13 person team with equipment)</li>
+<li><strong>Contingency</strong>: $20K total (2.4% of overall budget) is
+modest but Phase 1-2 have go/no-go gates allowing course correction</li>
+</ul>
+<p><strong>Risks</strong>:</p>
+<ul>
+<li><strong>Personnel Cost Assumptions</strong>: Assumes $100-120K/year
+loaded cost for engineers
+<ul>
+<li><strong>Risk</strong>: SMT solver experts and metrologists command
+15-25% premiums in competitive talent market</li>
+<li><strong>Mitigation</strong>: Contractor support for peak needs,
+offshore development for non-critical components, heavy SRS partnership
+leverage (0.5-4.5 FTE contribution reduces Hupyy hiring)</li>
+</ul></li>
+<li><strong>Scope Creep</strong>: ISO 17025 corrective actions or
+customer feature requests may expand scope
+<ul>
+<li><strong>Risk</strong>: Additional $20-50K for extended validation or
+regulatory compliance work</li>
+<li><strong>Mitigation</strong>: Change control process, contingency
+budget, option to extend Phase 3 by 1-2 months if needed</li>
+</ul></li>
+<li><strong>Equipment Failures</strong>: Precision test equipment can
+fail ($10-20K unbudgeted replacements)
+<ul>
+<li><strong>Mitigation</strong>: Use SRS equipment where possible, $10K
+equipment contingency in Phase 1</li>
+</ul></li>
+</ul>
 <p><strong>Overall Assessment</strong>: Budget is <strong>adequate but
 not generous</strong>. Execution discipline required. Overruns &gt; 20%
 ($166K) may require additional fundraising or SRS co-investment.</p>
@@ -948,22 +1030,34 @@ initial licenses $1.3M) - <strong>Year 5</strong>: $29M (diversified:
 licenses $6M, maintenance $6M, OEM fees $8M, enterprise $6.5M, services
 $2.5M) - <strong>5-Year Cumulative</strong>: ~$75M (conservative
 estimate accounting for ramp)</p>
-<p><strong>ROI Calculation</strong>: - <strong>Investment</strong>:
-$830K (16-month development) - <strong>Year 5 Annual Revenue</strong>:
-$29-45M (conservative to optimistic) - <strong>ROI Ratio</strong>:
-<strong>35:1 to 54:1</strong></p>
-<p><strong>Profitability Analysis</strong>: - <strong>Gross
-Margin</strong>: 70-75% blended (enterprise software typical) -
-<strong>Year 5 Gross Profit</strong>: $20-34M (at 70-75% margin on
-$29-45M revenue) - <strong>Operating Expenses</strong> (estimated Year
-5): - R&amp;D (30% of revenue): $9-14M (continue product development,
-maintain technical lead) - Sales &amp; Marketing (25%): $7-11M (customer
-acquisition, field support) - G&amp;A (15%): $4-7M (finance, legal, HR,
-facilities) - <strong>Total OpEx</strong>: $20-32M - <strong>Year 5
-EBITDA</strong>: $0-2M (breakeven to modest profit, reinvesting for
-growth) - <strong>Path to Profitability</strong>: Year 4-5 (typical SaaS
+<p><strong>ROI Calculation</strong>:</p>
+<ul>
+<li><strong>Investment</strong>: $830K (16-month development)</li>
+<li><strong>Year 5 Annual Revenue</strong>: $29-45M (conservative to
+optimistic)</li>
+<li><strong>ROI Ratio</strong>: <strong>35:1 to 54:1</strong></li>
+</ul>
+<p><strong>Profitability Analysis</strong>:</p>
+<ul>
+<li><strong>Gross Margin</strong>: 70-75% blended (enterprise software
+typical)</li>
+<li><strong>Year 5 Gross Profit</strong>: $20-34M (at 70-75% margin on
+$29-45M revenue)</li>
+<li><strong>Operating Expenses</strong> (estimated Year 5):
+<ul>
+<li>R&amp;D (30% of revenue): $9-14M (continue product development,
+maintain technical lead)</li>
+<li>Sales &amp; Marketing (25%): $7-11M (customer acquisition, field
+support)</li>
+<li>G&amp;A (15%): $4-7M (finance, legal, HR, facilities)</li>
+<li><strong>Total OpEx</strong>: $20-32M</li>
+</ul></li>
+<li><strong>Year 5 EBITDA</strong>: $0-2M (breakeven to modest profit,
+reinvesting for growth)</li>
+<li><strong>Path to Profitability</strong>: Year 4-5 (typical SaaS
 economics: invest in growth years 1-3, achieve profitability years
-4-5)</p>
+4-5)</li>
+</ul>
 <p><strong>Valuation Implications</strong> (Exit Scenarios): -
 <strong>Strategic Acquisition</strong> (Years 3-5 if successful): -
 <strong>Acquirers</strong>: Fluke (Fortive), Keysight, Tektronix,
@@ -977,11 +1071,15 @@ Revenue</strong>: $29M → <strong>Acquisition value $145-290M</strong> -
 Equity</strong> (Year 7-10 if independent path): - Target: $100M+
 revenue with 20%+ EBITDA margins - Valuation: 8-15× revenue (public SaaS
 comparables) - Exit value: $800M-1.5B+</p>
-<p><strong>Risk-Adjusted ROI</strong>: - <strong>Probability of
-Success</strong>: 60-70% (strong technical feasibility, market timing,
-partnership) - <strong>Expected Value</strong>: (70% × $145-290M) + (30%
-× $0) = <strong>$102-203M</strong> - <strong>Risk-Adjusted ROI</strong>:
-$102-203M ÷ $830K = <strong>123:1 to 244:1</strong></p>
+<p><strong>Risk-Adjusted ROI</strong>:</p>
+<ul>
+<li><strong>Probability of Success</strong>: 60-70% (strong technical
+feasibility, market timing, partnership)</li>
+<li><strong>Expected Value</strong>: (70% × $145-290M) + (30% × $0) =
+<strong>$102-203M</strong></li>
+<li><strong>Risk-Adjusted ROI</strong>: $102-203M ÷ $830K =
+<strong>123:1 to 244:1</strong></li>
+</ul>
 <hr />
 <h2 id="implementation-roadmap-summary">Implementation Roadmap
 Summary</h2>
@@ -991,17 +1089,20 @@ Summary</h2>
 verification can match manual NIST-traceable calibration within
 measurement uncertainty bounds, establishing foundation for ISO 17025
 accreditation.</p>
-<p><strong>Strategic Rationale for FS725</strong>: - <strong>Mature
-Product</strong>: 20+ years field experience, well-documented
-calibration procedures - <strong>Well-Understood Physics</strong>:
-Rubidium atomic clock physics precisely modeled (87Rb hyperfine
-transition at 6.835 GHz) - <strong>Mathematically Tractable</strong>:
-Frequency stability calibration (Allan deviation analysis) maps
-naturally to SMT theories - <strong>NIST Validation Path</strong>: NIST
-has deep frequency standards expertise, can provide third-party
-technical validation - <strong>Low Integration Risk</strong>:
-Standardized frequency counter outputs (10 MHz, 1 PPS), simplifying data
-interfaces</p>
+<p><strong>Strategic Rationale for FS725</strong>:</p>
+<ul>
+<li><strong>Mature Product</strong>: 20+ years field experience,
+well-documented calibration procedures</li>
+<li><strong>Well-Understood Physics</strong>: Rubidium atomic clock
+physics precisely modeled (87Rb hyperfine transition at 6.835 GHz)</li>
+<li><strong>Mathematically Tractable</strong>: Frequency stability
+calibration (Allan deviation analysis) maps naturally to SMT
+theories</li>
+<li><strong>NIST Validation Path</strong>: NIST has deep frequency
+standards expertise, can provide third-party technical validation</li>
+<li><strong>Low Integration Risk</strong>: Standardized frequency
+counter outputs (10 MHz, 1 PPS), simplifying data interfaces</li>
+</ul>
 <p><strong>Scope</strong> (In-Scope Only): - Frequency stability
 calibration (Allan deviation, short-term &lt; 2×10⁻¹¹, long-term &lt;
 5×10⁻¹⁰) - Environmental compensation (temperature coefficient, magnetic
@@ -1020,17 +1121,25 @@ fundamental barriers to accreditation - ✅ <strong>Qualitative</strong>:
 NIST provides written technical validation endorsement - ✅
 <strong>Qualitative</strong>: SRS commits to Phase 2 partnership (budget
 and resources approved)</p>
-<p><strong>Key Milestones</strong>: - <strong>Month 2</strong>: Go/No-Go
-#1 (architecture validation: SMT solver benchmarking, uncertainty budget
-feasibility) - <strong>Month 4</strong>: Mid-project review (alpha
-software validates 3 reference units within 3× uncertainty) -
-<strong>Month 6</strong>: Go/No-Go #2 (Phase 1 complete, authorize Phase
-2)</p>
-<p><strong>Deliverables</strong>: - Production-ready calibration
-verification software (v1.0) - Comprehensive validation report (75+
-pages) demonstrating equivalence to manual calibration - ISO 17025
-pre-assessment documentation package - NIST technical validation letter
-- Calibration procedure manual suitable for accreditation submission</p>
+<p><strong>Key Milestones</strong>:</p>
+<ul>
+<li><strong>Month 2</strong>: Go/No-Go #1 (architecture validation: SMT
+solver benchmarking, uncertainty budget feasibility)</li>
+<li><strong>Month 4</strong>: Mid-project review (alpha software
+validates 3 reference units within 3× uncertainty)</li>
+<li><strong>Month 6</strong>: Go/No-Go #2 (Phase 1 complete, authorize
+Phase 2)</li>
+</ul>
+<p><strong>Deliverables</strong>:</p>
+<ul>
+<li>Production-ready calibration verification software (v1.0)</li>
+<li>Comprehensive validation report (75+ pages) demonstrating
+equivalence to manual calibration</li>
+<li>ISO 17025 pre-assessment documentation package</li>
+<li>NIST technical validation letter</li>
+<li>Calibration procedure manual suitable for accreditation
+submission</li>
+</ul>
 <hr />
 <h3 id="phase-2-sr860-lock-in-amplifier-rga-residual-gas-analyzer-expansion-4-months-180k">Phase
 2: SR860 Lock-In Amplifier &amp; RGA Residual Gas Analyzer Expansion (4
@@ -1039,32 +1148,42 @@ Months, $180K)</h3>
 to multi-parameter calibration (SR860) and ultra-high vacuum
 applications (RGA), proving scalability beyond single-instrument
 pilot.</p>
-<p><strong>Strategic Rationale</strong>: - <strong>SR860 Lock-In
-Amplifier</strong>: Multi-parameter calibration (gain, phase, time
-constants, nanovolt sensitivity) tests framework generalization -
-<strong>RGA Residual Gas Analyzer</strong>: Ultra-high vacuum mass
+<p><strong>Strategic Rationale</strong>:</p>
+<ul>
+<li><strong>SR860 Lock-In Amplifier</strong>: Multi-parameter
+calibration (gain, phase, time constants, nanovolt sensitivity) tests
+framework generalization</li>
+<li><strong>RGA Residual Gas Analyzer</strong>: Ultra-high vacuum mass
 spectrometry (10⁻¹⁴ Torr) validates formal verification in complex
-physical domains - <strong>Parallel Development</strong>: SR860 and RGA
-developed concurrently (saves 4 weeks vs. sequential) to compress
-timeline</p>
-<p><strong>Scope</strong>: - <strong>Framework Generalization</strong>:
-Refactor Phase 1 code for plugin architecture (instrument-agnostic
-verification engine) - <strong>SR860 Development</strong>:
-Multi-parameter constraint modeling, AC signal analysis, harmonic
-rejection verification - <strong>RGA Development</strong>: UHV system
-integration, partial pressure calibration, mass spectrometry peak
-fitting - <strong>Beta Customer Deployment</strong>: Onboard 10 beta
-customers (100-200 instruments total) for field validation</p>
+physical domains</li>
+<li><strong>Parallel Development</strong>: SR860 and RGA developed
+concurrently (saves 4 weeks vs. sequential) to compress timeline</li>
+</ul>
+<p><strong>Scope</strong>:</p>
+<ul>
+<li><strong>Framework Generalization</strong>: Refactor Phase 1 code for
+plugin architecture (instrument-agnostic verification engine)</li>
+<li><strong>SR860 Development</strong>: Multi-parameter constraint
+modeling, AC signal analysis, harmonic rejection verification</li>
+<li><strong>RGA Development</strong>: UHV system integration, partial
+pressure calibration, mass spectrometry peak fitting</li>
+<li><strong>Beta Customer Deployment</strong>: Onboard 10 beta customers
+(100-200 instruments total) for field validation</li>
+</ul>
 <p><strong>Success Criteria</strong> (Go/No-Go Gate, Month 10): - ✅
 Framework supports 3 instrument families (FS725, SR860, RGA) with ≤ 2.5×
 manual uncertainty - ✅ Beta customer satisfaction ≥ 3.5/5.0 (validates
 real-world usability) - ✅ ISO 17025 documentation updated for
 multi-instrument scope - ✅ 10 beta customers onboarded with deployment
 commitments</p>
-<p><strong>Deliverables</strong>: - Plugin-based verification framework
-with instrument abstraction layer - SR860 and RGA verification modules
-(production-ready) - Beta customer onboarding and training materials -
-Multi-instrument validation report</p>
+<p><strong>Deliverables</strong>:</p>
+<ul>
+<li>Plugin-based verification framework with instrument abstraction
+layer</li>
+<li>SR860 and RGA verification modules (production-ready)</li>
+<li>Beta customer onboarding and training materials</li>
+<li>Multi-instrument validation report</li>
+</ul>
 <hr />
 <h3 id="phase-3-full-product-line-integration-commercial-launch-6-months-400k">Phase
 3: Full Product Line Integration &amp; Commercial Launch (6 Months,
@@ -1072,19 +1191,29 @@ $400K)</h3>
 <p><strong>Objective</strong>: Scale to 20+ SRS product families, deploy
 multi-tenant cloud platform, achieve ISO 17025 accreditation, execute
 commercial launch with 20+ paying customers.</p>
-<p><strong>Scope</strong>: - <strong>Product Line Expansion</strong>: -
-Tier 1 (Months 11-12): 7 high-priority instruments (SR865A/SR830
+<p><strong>Scope</strong>:</p>
+<ul>
+<li><strong>Product Line Expansion</strong>:
+<ul>
+<li>Tier 1 (Months 11-12): 7 high-priority instruments (SR865A/SR830
 lock-ins, SG380 series signal generators, CTI-Cryogenics modular
-systems) - Tier 2 (Months 13-14): 10-15 additional products (pulse
-generators, amplifiers, specialized instrumentation) - <strong>Cloud
-Platform</strong>: Multi-tenant SaaS architecture on AWS/Azure,
-Kubernetes orchestration, 99.9% uptime SLA - <strong>Manufacturing
-Integration</strong>: Embed verification in SRS production line for
-final calibration of new instruments - <strong>ISO 17025
-Accreditation</strong>: - Month 15: A2LA on-site assessment (4 days) -
-Month 16-17: Corrective actions if needed - Target: Accreditation
-granted Month 15-19 - <strong>Commercial Launch</strong>: Press release,
-marketing campaign, 20+ customer acquisition target</p>
+systems)</li>
+<li>Tier 2 (Months 13-14): 10-15 additional products (pulse generators,
+amplifiers, specialized instrumentation)</li>
+</ul></li>
+<li><strong>Cloud Platform</strong>: Multi-tenant SaaS architecture on
+AWS/Azure, Kubernetes orchestration, 99.9% uptime SLA</li>
+<li><strong>Manufacturing Integration</strong>: Embed verification in
+SRS production line for final calibration of new instruments</li>
+<li><strong>ISO 17025 Accreditation</strong>:
+<ul>
+<li>Month 15: A2LA on-site assessment (4 days)</li>
+<li>Month 16-17: Corrective actions if needed</li>
+<li>Target: Accreditation granted Month 15-19</li>
+</ul></li>
+<li><strong>Commercial Launch</strong>: Press release, marketing
+campaign, 20+ customer acquisition target</li>
+</ul>
 <p><strong>Success Criteria</strong> (Go/No-Go Gate, Month 16): - ✅
 Cloud platform load testing passes (1,000 concurrent users, 99.9%
 uptime) - ✅ 20+ product families deployed with ≤ 2× manual uncertainty
@@ -1092,10 +1221,14 @@ uptime) - ✅ 20+ product families deployed with ≤ 2× manual uncertainty
 progress) - ✅ 20+ paying customers acquired, ≥ 200 instruments under
 subscription - ✅ MRR ≥ $15K (monthly recurring revenue demonstrates
 commercial traction)</p>
-<p><strong>Deliverables</strong>: - Cloud-based SaaS platform
-(production) - 20+ product family verification modules - ISO 17025
-accreditation certificate - Commercial launch marketing materials -
-First $15K+ MRR</p>
+<p><strong>Deliverables</strong>:</p>
+<ul>
+<li>Cloud-based SaaS platform (production)</li>
+<li>20+ product family verification modules</li>
+<li>ISO 17025 accreditation certificate</li>
+<li>Commercial launch marketing materials</li>
+<li>First $15K+ MRR</li>
+</ul>
 <hr />
 <h2 id="regulatory-pathway-and-risk">Regulatory Pathway and Risk</h2>
 <h3 id="isoiec-170252017-accreditation-strategy">ISO/IEC 17025:2017
@@ -1293,24 +1426,29 @@ instruments, 10 beta customers, field evidence for accreditation -
 platform launched, ISO 17025 accreditation, 20+ paying customers, $15K+
 MRR - <strong>Year 5</strong>: $29-45M revenue, 70-75% gross margin,
 potential acquisition exit ($145-290M at 5-10× revenue multiple)</p>
-<p><strong>Strategic Value Beyond Financials</strong>: -
-<strong>Regulatory Moat</strong>: Potential winner-take-most scenario if
-formal verification becomes standards-recognized method (5+ year
-competitive advantage) - <strong>Technology Leadership</strong>:
-Establishes Hupyy as thought leader in formal methods for metrology
-(conference keynotes, peer-reviewed publications, standards committee
-participation) - <strong>Platform Expansion</strong>: Architecture
-enables expansion beyond SRS (multi-OEM partnerships, calibration
-service provider SaaS, international metrology institutes)</p>
-<p><strong>Alternatives Considered and Rejected</strong>: -
-<strong>NO-GO</strong>: Would forfeit 78/100 opportunity with 35:1 to
-54:1 ROI and unique competitive positioning (not recommended) -
-<strong>Conditional GO</strong>: Appropriate if score 50-64; Sprint 02
-scores 78 (well above threshold for full GO) - <strong>Scope
-Reduction</strong>: Could reduce to SRS-only internal tool (no ISO 17025
-accreditation), but this sacrifices regulatory moat and calibration
-service market (not recommended unless Phase 1 demonstrates
-infeasibility)</p>
+<p><strong>Strategic Value Beyond Financials</strong>:</p>
+<ul>
+<li><strong>Regulatory Moat</strong>: Potential winner-take-most
+scenario if formal verification becomes standards-recognized method (5+
+year competitive advantage)</li>
+<li><strong>Technology Leadership</strong>: Establishes Hupyy as thought
+leader in formal methods for metrology (conference keynotes,
+peer-reviewed publications, standards committee participation)</li>
+<li><strong>Platform Expansion</strong>: Architecture enables expansion
+beyond SRS (multi-OEM partnerships, calibration service provider SaaS,
+international metrology institutes)</li>
+</ul>
+<p><strong>Alternatives Considered and Rejected</strong>:</p>
+<ul>
+<li><strong>NO-GO</strong>: Would forfeit 78/100 opportunity with 35:1
+to 54:1 ROI and unique competitive positioning (not recommended)</li>
+<li><strong>Conditional GO</strong>: Appropriate if score 50-64; Sprint
+02 scores 78 (well above threshold for full GO)</li>
+<li><strong>Scope Reduction</strong>: Could reduce to SRS-only internal
+tool (no ISO 17025 accreditation), but this sacrifices regulatory moat
+and calibration service market (not recommended unless Phase 1
+demonstrates infeasibility)</li>
+</ul>
 <hr />
 <h2 id="appendices">Appendices</h2>
 <h3 id="appendix-a-key-assumptions">Appendix A: Key Assumptions</h3>
@@ -1378,48 +1516,67 @@ platform, deployment, security) - Certification pathway: 6 files (ISO
 testing, quality assurance, regulatory compliance) - Implementation
 roadmap: 8 files (Phase 1-3 plans, resource requirements, partnership
 structure, risk mitigation, master timeline, go-to-market strategy)</p>
-<p><strong>Secondary Research</strong>: - Industry standards: ISO/IEC
-17025:2017, ILAC P14:09/2020, FDA 21 CFR Part 11/820, GUM (ISO/IEC Guide
-98-3:2008) - Market reports: MarketsandMarkets (Industrial Metrology
-2025), ETQ (Quality in Manufacturing 2025) - Technical publications:
-IEEE standards, NIST Special Publications, SMT-LIB 2.6 specification -
-Competitive intelligence: Vendor websites (Fluke, Keysight, Beamex),
-Capterra reviews, industry conferences (NCSLI)</p>
-<p><strong>Validation Methods</strong>: - Cross-validation: Market
-sizing validated across 3+ independent sources - Expert consultation:
-NIST collaboration, A2LA pre-assessment, metrology consultant engagement
-- Customer research: Pain point validation through A2LA data, FDA
-citations analysis, industry surveys - Technical benchmarking: SMT
-solver performance testing, uncertainty budget pilot calculations</p>
+<p><strong>Secondary Research</strong>:</p>
+<ul>
+<li>Industry standards: ISO/IEC 17025:2017, ILAC P14:09/2020, FDA 21 CFR
+Part 11/820, GUM (ISO/IEC Guide 98-3:2008)</li>
+<li>Market reports: MarketsandMarkets (Industrial Metrology 2025), ETQ
+(Quality in Manufacturing 2025)</li>
+<li>Technical publications: IEEE standards, NIST Special Publications,
+SMT-LIB 2.6 specification</li>
+<li>Competitive intelligence: Vendor websites (Fluke, Keysight, Beamex),
+Capterra reviews, industry conferences (NCSLI)</li>
+</ul>
+<p><strong>Validation Methods</strong>:</p>
+<ul>
+<li>Cross-validation: Market sizing validated across 3+ independent
+sources</li>
+<li>Expert consultation: NIST collaboration, A2LA pre-assessment,
+metrology consultant engagement</li>
+<li>Customer research: Pain point validation through A2LA data, FDA
+citations analysis, industry surveys</li>
+<li>Technical benchmarking: SMT solver performance testing, uncertainty
+budget pilot calculations</li>
+</ul>
 <h3 id="appendix-d-cross-reference-to-detailed-research">Appendix D:
 Cross-Reference to Detailed Research</h3>
-<p><strong>Technical Feasibility</strong>: -
-<code>/temp/sprint-02/01-technical/03-formal-verification-uncertainty-quantification.md</code>
-(SMT solver application to calibration) -
-<code>/temp/sprint-02/03-architecture/01-system-architecture-overview.md</code>
-(verification-first architecture, performance targets)</p>
-<p><strong>Market Analysis</strong>: -
-<code>/temp/sprint-02/02-market/01-calibration-market-tam-sam-som.md</code>
-(market sizing validation) -
-<code>/temp/sprint-02/02-market/03-customer-segments-pain-points.md</code>
-(pain point evidence, A2LA data) -
-<code>/temp/sprint-02/02-market/06-formal-verification-opportunity-gap.md</code>
-(competitive analysis, zero competitors finding)</p>
-<p><strong>Financial Viability</strong>: -
-<code>/temp/sprint-02/02-market/04-pricing-revenue-models.md</code>
-(revenue model, pricing strategy, ROI analysis) -
-<code>/temp/sprint-02/05-roadmap/04-resource-requirements-team-structure.md</code>
-(budget breakdown, personnel costs)</p>
-<p><strong>Regulatory Pathway</strong>: -
-<code>/temp/sprint-02/04-certification/01-iso17025-accreditation-requirements.md</code>
-(regulatory framework, timeline) -
-<code>/temp/sprint-02/04-certification/03-a2la-accreditation-process.md</code>
-(accreditation process, precedent analysis)</p>
-<p><strong>Implementation Roadmap</strong>: -
-<code>/temp/sprint-02/05-roadmap/01-phase1-pilot-fs725-rubidium-standard.md</code>
-(Phase 1 detailed plan) -
-<code>/temp/sprint-02/05-roadmap/07-master-timeline-gantt-chart.md</code>
-(16-month timeline, critical path)</p>
+<p><strong>Technical Feasibility</strong>:</p>
+<ul>
+<li><code>/temp/sprint-02/01-technical/03-formal-verification-uncertainty-quantification.md</code>
+(SMT solver application to calibration)</li>
+<li><code>/temp/sprint-02/03-architecture/01-system-architecture-overview.md</code>
+(verification-first architecture, performance targets)</li>
+</ul>
+<p><strong>Market Analysis</strong>:</p>
+<ul>
+<li><code>/temp/sprint-02/02-market/01-calibration-market-tam-sam-som.md</code>
+(market sizing validation)</li>
+<li><code>/temp/sprint-02/02-market/03-customer-segments-pain-points.md</code>
+(pain point evidence, A2LA data)</li>
+<li><code>/temp/sprint-02/02-market/06-formal-verification-opportunity-gap.md</code>
+(competitive analysis, zero competitors finding)</li>
+</ul>
+<p><strong>Financial Viability</strong>:</p>
+<ul>
+<li><code>/temp/sprint-02/02-market/04-pricing-revenue-models.md</code>
+(revenue model, pricing strategy, ROI analysis)</li>
+<li><code>/temp/sprint-02/05-roadmap/04-resource-requirements-team-structure.md</code>
+(budget breakdown, personnel costs)</li>
+</ul>
+<p><strong>Regulatory Pathway</strong>:</p>
+<ul>
+<li><code>/temp/sprint-02/04-certification/01-iso17025-accreditation-requirements.md</code>
+(regulatory framework, timeline)</li>
+<li><code>/temp/sprint-02/04-certification/03-a2la-accreditation-process.md</code>
+(accreditation process, precedent analysis)</li>
+</ul>
+<p><strong>Implementation Roadmap</strong>:</p>
+<ul>
+<li><code>/temp/sprint-02/05-roadmap/01-phase1-pilot-fs725-rubidium-standard.md</code>
+(Phase 1 detailed plan)</li>
+<li><code>/temp/sprint-02/05-roadmap/07-master-timeline-gantt-chart.md</code>
+(16-month timeline, critical path)</li>
+</ul>
 <hr />
 <p><strong>Document Status</strong>: Final <strong>Word Count</strong>:
 7,487 words (within 5,000-7,500 target range) <strong>Author</strong>:

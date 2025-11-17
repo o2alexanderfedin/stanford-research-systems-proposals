@@ -100,6 +100,21 @@ td:first-child {
 min-width: 150px;
 }
 
+ol, ul {
+margin: 1em 0;
+padding-left: 2em;
+}
+li {
+margin: 0.5em 0;
+line-height: 1.8;
+}
+li p {
+margin: 0.25em 0;
+}
+ol ol, ul ul, ol ul, ul ol {
+margin: 0.5em 0;
+}
+
 code {
 background-color: #f5f5f5;
 padding: 2px 6px;
@@ -643,18 +658,26 @@ Points</h3>
 Pharmaceutical &amp; Life Sciences ($370M SAM)</h4>
 <p><strong>Market Size</strong>: 15,000 pharmaceutical labs globally;
 $500K-750K customer LTV over 5 years</p>
-<p><strong>Critical Pain Points</strong>: - Manual validation burden:
-$500K-2M cost, 6-12 months timeline per system - FDA data integrity
-violations: 56 warning letters (2023), penalties $500K-100M+ - Product
-recalls: $50-100M per incident due to analytical errors - Analytical
-method transfer: 3-6 months to revalidate between labs</p>
+<p><strong>Critical Pain Points</strong>:</p>
+<ul>
+<li>Manual validation burden: $500K-2M cost, 6-12 months timeline per
+system</li>
+<li>FDA data integrity violations: 56 warning letters (2023), penalties
+$500K-100M+</li>
+<li>Product recalls: $50-100M per incident due to analytical errors</li>
+<li>Analytical method transfer: 3-6 months to revalidate between
+labs</li>
+</ul>
 <p><strong>Use Cases</strong>: Drug stability testing (HPLC/UHPLC),
 clinical trial biomarker analysis, QC batch release testing, biosimilar
 comparability studies</p>
-<p><strong>Buyer Personas</strong>: - VP Quality Assurance (compliance
-focus, $250K-1M budget) - Director Analytical Development (scientific
-rigor, $100K-500K budget) - IT Director (lab informatics, cloud
-migration, $500K-2M budget)</p>
+<p><strong>Buyer Personas</strong>:</p>
+<ul>
+<li>VP Quality Assurance (compliance focus, $250K-1M budget)</li>
+<li>Director Analytical Development (scientific rigor, $100K-500K
+budget)</li>
+<li>IT Director (lab informatics, cloud migration, $500K-2M budget)</li>
+</ul>
 <p><strong>Value Proposition</strong>: Reduce validation timeline from 6
 months to 6 weeks ($400K-1.6M cost savings); eliminate $50M-100M recall
 risk through mathematical guarantees; automate FDA 21 CFR Part 11
@@ -663,18 +686,26 @@ compliance artifact generation.</p>
 Semiconductor Manufacturing ($602M SAM)</h4>
 <p><strong>Market Size</strong>: 500 semiconductor fabs globally;
 $1.5M-5M customer LTV over 7-10 years</p>
-<p><strong>Critical Pain Points</strong>: - Yield loss: 1% loss = $100M
-annual revenue impact on $10B fab - ATE data overload: Terabytes daily
-with actionable insights buried - Multi-site consistency: Yield
-variations between fabs reduce capacity utilization - NPI delays: Months
-of yield learning; time-to-market costs millions per week</p>
+<p><strong>Critical Pain Points</strong>:</p>
+<ul>
+<li>Yield loss: 1% loss = $100M annual revenue impact on $10B fab</li>
+<li>ATE data overload: Terabytes daily with actionable insights
+buried</li>
+<li>Multi-site consistency: Yield variations between fabs reduce
+capacity utilization</li>
+<li>NPI delays: Months of yield learning; time-to-market costs millions
+per week</li>
+</ul>
 <p><strong>Use Cases</strong>: Wafer defect analysis and yield
 prediction, ATE data analytics and test optimization, equipment health
 monitoring and predictive maintenance, metrology data SPC and APC</p>
-<p><strong>Buyer Personas</strong>: - Fab Operations Manager (yield
-maximization, $500K-2M budget) - Yield Enhancement Engineer (root cause
-analysis, $100K-500K budget) - IT/Infrastructure Director (big data
-analytics, $1M-5M budget)</p>
+<p><strong>Buyer Personas</strong>:</p>
+<ul>
+<li>Fab Operations Manager (yield maximization, $500K-2M budget)</li>
+<li>Yield Enhancement Engineer (root cause analysis, $100K-500K
+budget)</li>
+<li>IT/Infrastructure Director (big data analytics, $1M-5M budget)</li>
+</ul>
 <p><strong>Value Proposition</strong>: AI-verified yield prediction
 models with formal guarantees reduce NPI timeline by 20-30%; 48% of new
 semiconductor testers already feature AI (2024)—formal verification
@@ -683,19 +714,27 @@ addresses explainability gap for production deployment.</p>
 Defense ($242M SAM)</h4>
 <p><strong>Market Size</strong>: 500 aerospace/defense organizations
 globally; $2M-5M customer LTV over 10-20 years</p>
-<p><strong>Critical Pain Points</strong>: - DO-178C Level A
-certification: $1M-5M per software project, 12-24 months - V&amp;V
-burden: 50-70% of development cost in verification and validation -
-Traceability complexity: Manual traceability matrices; audit prep takes
-weeks - Legacy system modernization: 30-50 year lifecycles stuck with
-obsolete tools</p>
+<p><strong>Critical Pain Points</strong>:</p>
+<ul>
+<li>DO-178C Level A certification: $1M-5M per software project, 12-24
+months</li>
+<li>V&amp;V burden: 50-70% of development cost in verification and
+validation</li>
+<li>Traceability complexity: Manual traceability matrices; audit prep
+takes weeks</li>
+<li>Legacy system modernization: 30-50 year lifecycles stuck with
+obsolete tools</li>
+</ul>
 <p><strong>Use Cases</strong>: Flight test data analysis, structural
 testing and airworthiness, avionics HIL testing and fault injection,
 supplier component testing and qualification</p>
-<p><strong>Buyer Personas</strong>: - Chief Engineer/Certification
-Manager (FAA/EASA certification, $500K-5M budget) - Test Engineer/Lab
-Manager (test execution, $100K-500K budget) - Systems Safety Engineer
-(FHA/FTA/FMEA, $250K-1M budget)</p>
+<p><strong>Buyer Personas</strong>:</p>
+<ul>
+<li>Chief Engineer/Certification Manager (FAA/EASA certification,
+$500K-5M budget)</li>
+<li>Test Engineer/Lab Manager (test execution, $100K-500K budget)</li>
+<li>Systems Safety Engineer (FHA/FTA/FMEA, $250K-1M budget)</li>
+</ul>
 <p><strong>Value Proposition</strong>: IEC 62304 explicitly recognizes
 formal proof as verification method; automated traceability and DO-178C
 artifact generation reduces V&amp;V cost from 50-70% to 30-40% of
@@ -704,19 +743,29 @@ project budget ($350K-2.1M savings per project).</p>
 Academic &amp; Research Institutions ($120M SAM)</h4>
 <p><strong>Market Size</strong>: 10,000 research universities globally;
 $50K-150K customer LTV over 5 years</p>
-<p><strong>Critical Pain Points</strong>: - Reproducibility crisis:
-50-70% of research results cannot be reproduced - Budget constraints:
-Difficult to justify expensive commercial licenses ($5K-20K/year) -
-Grant competitiveness: NIH R01 success rate ~20%; demonstrating rigor
-critical - Collaboration barriers: Multi-institution studies require
-consistent analysis methods</p>
+<p><strong>Critical Pain Points</strong>:</p>
+<ul>
+<li>Reproducibility crisis: 50-70% of research results cannot be
+reproduced</li>
+<li>Budget constraints: Difficult to justify expensive commercial
+licenses ($5K-20K/year)</li>
+<li>Grant competitiveness: NIH R01 success rate ~20%; demonstrating
+rigor critical</li>
+<li>Collaboration barriers: Multi-institution studies require consistent
+analysis methods</li>
+</ul>
 <p><strong>Use Cases</strong>: Preclinical drug discovery research,
 materials science characterization (SRS instruments), multi-omics data
 integration, collaborative clinical research</p>
-<p><strong>Buyer Personas</strong>: - Principal Investigator
-(publication/grant focus, $50K-500K lab budget) - Core Facility Director
-(multi-user support, $100K-1M facility budget) - University IT/Research
-Computing (infrastructure, $500K-5M budget)</p>
+<p><strong>Buyer Personas</strong>:</p>
+<ul>
+<li>Principal Investigator (publication/grant focus, $50K-500K lab
+budget)</li>
+<li>Core Facility Director (multi-user support, $100K-1M facility
+budget)</li>
+<li>University IT/Research Computing (infrastructure, $500K-5M
+budget)</li>
+</ul>
 <p><strong>Value Proposition</strong>: “Publish with confidence—formal
 verification guarantees correctness”; academic pricing ($10K-25K/year)
 competitive with MATLAB + toolboxes ($15K+); addresses peer review and
@@ -820,15 +869,22 @@ international markets)</p>
 <h3 id="primary-competitors-analysis">Primary Competitors Analysis</h3>
 <h4 id="national-instruments-labview-25-30-market-share">National
 Instruments LabVIEW (25-30% market share)</h4>
-<p><strong>Strengths</strong>: - Deep hardware integration (1,000+
-instruments) - Visual programming accessible to non-programmers -
-Real-time capabilities and extensive ecosystem - Aerospace/automotive
-entrenchment (&gt;1M users globally)</p>
-<p><strong>Weaknesses</strong>: - <strong>No formal
-verification</strong> capability - Proprietary lock-in (difficult to
-version control/migrate) - Limited AI/ML capabilities - Scalability
-constraints for large datasets - <strong>Manual regulatory
-compliance</strong> (FDA, DO-178C requires extensive documentation)</p>
+<p><strong>Strengths</strong>:</p>
+<ul>
+<li>Deep hardware integration (1,000+ instruments)</li>
+<li>Visual programming accessible to non-programmers</li>
+<li>Real-time capabilities and extensive ecosystem</li>
+<li>Aerospace/automotive entrenchment (&gt;1M users globally)</li>
+</ul>
+<p><strong>Weaknesses</strong>:</p>
+<ul>
+<li><strong>No formal verification</strong> capability</li>
+<li>Proprietary lock-in (difficult to version control/migrate)</li>
+<li>Limited AI/ML capabilities</li>
+<li>Scalability constraints for large datasets</li>
+<li><strong>Manual regulatory compliance</strong> (FDA, DO-178C requires
+extensive documentation)</li>
+</ul>
 <p><strong>Pricing</strong>: $407-$5,344/year subscription;
 $1,500-$5,300+ perpetual license</p>
 <p><strong>Competitive Response Timeline</strong>: 2-3 years to develop
@@ -838,17 +894,25 @@ verification expertise (specialized talent acquisition needed) -
 Organizational inertia (protect existing revenue streams)</p>
 <h4 id="mathworks-matlab-20-25-commercial-50-60-academic-market-share">MathWorks
 MATLAB (20-25% commercial, 50-60% academic market share)</h4>
-<p><strong>Strengths</strong>: - Mathematical depth with
-industry-leading algorithms - Extensive toolbox ecosystem (100+
-specialized toolboxes) - Academic adoption creates talent pipeline
-(&gt;4M users worldwide) - Model-based design (Simulink) for
-system-level verification</p>
-<p><strong>Weaknesses</strong>: - Proprietary language creates vendor
-lock-in - <strong>High cost</strong> ($940-$15,000+/year depending on
-toolboxes) - Performance limitations versus compiled languages -
-<strong>Limited formal verification</strong> (Simulink Design Verifier
-partial, not comprehensive) - <strong>AI explainability gap</strong> -
-Cloud adoption lag</p>
+<p><strong>Strengths</strong>:</p>
+<ul>
+<li>Mathematical depth with industry-leading algorithms</li>
+<li>Extensive toolbox ecosystem (100+ specialized toolboxes)</li>
+<li>Academic adoption creates talent pipeline (&gt;4M users
+worldwide)</li>
+<li>Model-based design (Simulink) for system-level verification</li>
+</ul>
+<p><strong>Weaknesses</strong>:</p>
+<ul>
+<li>Proprietary language creates vendor lock-in</li>
+<li><strong>High cost</strong> ($940-$15,000+/year depending on
+toolboxes)</li>
+<li>Performance limitations versus compiled languages</li>
+<li><strong>Limited formal verification</strong> (Simulink Design
+Verifier partial, not comprehensive)</li>
+<li><strong>AI explainability gap</strong></li>
+<li>Cloud adoption lag</li>
+</ul>
 <p><strong>Pricing</strong>: $940-$15,000+/year; academic discounts
 available</p>
 <p><strong>Competitive Gap</strong>: Simulink Design Verifier provides
@@ -856,17 +920,24 @@ some formal methods but focused on model-based design, not scientific
 data analysis algorithms. No AI verification capabilities.</p>
 <h4 id="python-scientific-stack-60-70-academic-40-50-commercial-data-science">Python
 Scientific Stack (60-70% academic, 40-50% commercial data science)</h4>
-<p><strong>Strengths</strong>: - <strong>Zero cost</strong>
-(free/open-source MIT/BSD licenses) - Massive ecosystem (400K+ packages)
-- AI/ML leadership (PyTorch, TensorFlow, scikit-learn) -
-Interoperability and reproducibility (Jupyter Notebooks) - Cloud-native
-support</p>
-<p><strong>Weaknesses</strong>: - <strong>No formal
-verification</strong> - Quality variability across packages - <strong>No
-commercial SLA</strong> or guaranteed support - <strong>Regulatory
-compliance gap</strong>: Difficult for FDA/DO-178C without extensive
-manual validation - Steep learning curve for non-programmers -
-Performance inconsistency</p>
+<p><strong>Strengths</strong>:</p>
+<ul>
+<li><strong>Zero cost</strong> (free/open-source MIT/BSD licenses)</li>
+<li>Massive ecosystem (400K+ packages)</li>
+<li>AI/ML leadership (PyTorch, TensorFlow, scikit-learn)</li>
+<li>Interoperability and reproducibility (Jupyter Notebooks)</li>
+<li>Cloud-native support</li>
+</ul>
+<p><strong>Weaknesses</strong>:</p>
+<ul>
+<li><strong>No formal verification</strong></li>
+<li>Quality variability across packages</li>
+<li><strong>No commercial SLA</strong> or guaranteed support</li>
+<li><strong>Regulatory compliance gap</strong>: Difficult for
+FDA/DO-178C without extensive manual validation</li>
+<li>Steep learning curve for non-programmers</li>
+<li>Performance inconsistency</li>
+</ul>
 <p><strong>Pricing</strong>: Free; optional commercial support (Anaconda
 $5K-20K/year for enterprise)</p>
 <p><strong>Competitive Position</strong>: Python is collaborator not
@@ -875,29 +946,46 @@ formal verification and compliance automation. Position as “Enterprise
 Python with Guarantees.”</p>
 <h4 id="originlab-originoriginpro-5-10-market-share-niche-verticals">OriginLab
 Origin/OriginPro (5-10% market share, niche verticals)</h4>
-<p><strong>Strengths</strong>: - Publication-quality graphics
-(industry-leading) - Ease of use (GUI-driven) - Scientific instrument
-integration - Specialized for analytical chemistry/spectroscopy (&gt;1M
-registered users)</p>
-<p><strong>Weaknesses</strong>: - Windows-only platform - Limited
-programming capabilities - <strong>No formal verification</strong> -
-Small ecosystem versus MATLAB/Python - <strong>Manual regulatory
-compliance</strong> - Scalability issues for large datasets - Minimal
-AI/ML capabilities</p>
+<p><strong>Strengths</strong>:</p>
+<ul>
+<li>Publication-quality graphics (industry-leading)</li>
+<li>Ease of use (GUI-driven)</li>
+<li>Scientific instrument integration</li>
+<li>Specialized for analytical chemistry/spectroscopy (&gt;1M registered
+users)</li>
+</ul>
+<p><strong>Weaknesses</strong>:</p>
+<ul>
+<li>Windows-only platform</li>
+<li>Limited programming capabilities</li>
+<li><strong>No formal verification</strong></li>
+<li>Small ecosystem versus MATLAB/Python</li>
+<li><strong>Manual regulatory compliance</strong></li>
+<li>Scalability issues for large datasets</li>
+<li>Minimal AI/ML capabilities</li>
+</ul>
 <p><strong>Pricing</strong>: $500-$1,800/year; academic discounts</p>
 <p><strong>Competitive Assessment</strong>: Narrow niche focus; not
 significant competitive threat for regulated markets.</p>
 <h4 id="emerging-cloud-platforms-databricks-sagemaker-azure-ml">Emerging
 Cloud Platforms (Databricks, SageMaker, Azure ML)</h4>
-<p><strong>Strengths</strong>: - Cloud-native scalability -
-State-of-the-art AI/ML frameworks - Enterprise integration capabilities
-- Commercial SLAs and support</p>
-<p><strong>Weaknesses</strong>: - <strong>Lack instrument-specific
-integrations</strong> (focus on general data science) - <strong>No
-formal verification</strong> capabilities - Expensive for small
-laboratories ($10K-500K+/year) - Require data engineering expertise -
-<strong>Not designed for real-time data acquisition</strong> from
-scientific instruments</p>
+<p><strong>Strengths</strong>:</p>
+<ul>
+<li>Cloud-native scalability</li>
+<li>State-of-the-art AI/ML frameworks</li>
+<li>Enterprise integration capabilities</li>
+<li>Commercial SLAs and support</li>
+</ul>
+<p><strong>Weaknesses</strong>:</p>
+<ul>
+<li><strong>Lack instrument-specific integrations</strong> (focus on
+general data science)</li>
+<li><strong>No formal verification</strong> capabilities</li>
+<li>Expensive for small laboratories ($10K-500K+/year)</li>
+<li>Require data engineering expertise</li>
+<li><strong>Not designed for real-time data acquisition</strong> from
+scientific instruments</li>
+</ul>
 <p><strong>Pricing</strong>: Usage-based; $10K-500K+/year typical
 enterprise deployment</p>
 <p><strong>Competitive Position</strong>: Horizontal platforms versus
@@ -910,10 +998,13 @@ Void</h4>
 <p><strong>Current State</strong>: All competitors rely on
 testing/validation (cannot prove correctness, only absence of detected
 errors)</p>
-<p><strong>Customer Impact</strong>: - Regulatory compliance costs
-$500K-2M per validation project - Product recalls $50-100M when
-analytical errors occur - Manual artifact generation consumes 20-40% of
-project time/budget</p>
+<p><strong>Customer Impact</strong>:</p>
+<ul>
+<li>Regulatory compliance costs $500K-2M per validation project</li>
+<li>Product recalls $50-100M when analytical errors occur</li>
+<li>Manual artifact generation consumes 20-40% of project
+time/budget</li>
+</ul>
 <p><strong>Hupyy Advantage</strong>: Mathematical proofs provide
 certainty that algorithms are correct across all inputs in operating
 range—superior regulatory evidence versus statistical confidence from
@@ -922,10 +1013,14 @@ testing.</p>
 Trust</h4>
 <p><strong>Current State</strong>: AI/ML tools (MATLAB, Python, cloud
 platforms) lack explainability and formal guarantees</p>
-<p><strong>Customer Impact</strong>: - Regulatory bodies (FDA, FAA)
-require explainable AI for safety-critical applications - AI models
-deployed in production without mathematical guarantees of behavior -
-“Black box” perception limits adoption in regulated industries</p>
+<p><strong>Customer Impact</strong>:</p>
+<ul>
+<li>Regulatory bodies (FDA, FAA) require explainable AI for
+safety-critical applications</li>
+<li>AI models deployed in production without mathematical guarantees of
+behavior</li>
+<li>“Black box” perception limits adoption in regulated industries</li>
+</ul>
 <p><strong>Hupyy Advantage</strong>: AI-verified analysis with formal
 guarantees on model behavior addresses regulatory explainability
 requirements; unique capability in market.</p>
@@ -934,17 +1029,23 @@ Compliance Automation</h4>
 <p><strong>Current State</strong>: All competitors require extensive
 manual effort for compliance (FDA 21 CFR Part 11, DO-178C, ISO
 17025)</p>
-<p><strong>Customer Impact</strong>: - Manual validation consumes 20-40%
-of project time/budget - Error-prone documentation generation -
-Difficult to maintain compliance across updates</p>
+<p><strong>Customer Impact</strong>:</p>
+<ul>
+<li>Manual validation consumes 20-40% of project time/budget</li>
+<li>Error-prone documentation generation</li>
+<li>Difficult to maintain compliance across updates</li>
+</ul>
 <p><strong>Hupyy Advantage</strong>: Automated compliance artifact
 generation saves $250K-2.5M per project; continuous compliance versus
 frozen validated systems.</p>
 <h4 id="gap-4-cloud-native-instrument-integration">Gap 4: Cloud-Native
 Instrument Integration</h4>
-<p><strong>Current State</strong>: - Legacy tools (LabVIEW, MATLAB,
-Origin) desktop-centric - Cloud platforms lack instrument integrations -
-Modern labs need both capabilities</p>
+<p><strong>Current State</strong>:</p>
+<ul>
+<li>Legacy tools (LabVIEW, MATLAB, Origin) desktop-centric</li>
+<li>Cloud platforms lack instrument integrations</li>
+<li>Modern labs need both capabilities</li>
+</ul>
 <p><strong>Hupyy Advantage</strong>: Cloud-native architecture with
 native instrument drivers; API integrations with cloud data lakes, LIMS,
 ERP; modern collaboration versus legacy desktop tools.</p>
@@ -958,15 +1059,19 @@ support, compliance automation)</p>
 <p><strong>Core Message</strong>: “The only scientific data analysis
 platform with mathematical guarantees of correctness—trusted by
 regulated industries where errors cost millions”</p>
-<p><strong>Differentiation Pillars</strong>: 1. <strong>Formal
-verification</strong>: Mathematical proofs of analytical correctness
-(unique capability) 2. <strong>AI explainability</strong>: Verified AI
-models for regulatory acceptance (no competitor offers) 3.
-<strong>Compliance automation</strong>: Automated validation artifacts
-(FDA, DO-178C, ISO)—50% time reduction 4. <strong>Cloud-native</strong>:
-Modern architecture versus legacy desktop tools 5. <strong>ROI
-focus</strong>: $250K-2.5M savings per project; 5-10x return on
-investment</p>
+<p><strong>Differentiation Pillars</strong>:</p>
+<ol type="1">
+<li><strong>Formal verification</strong>: Mathematical proofs of
+analytical correctness (unique capability)</li>
+<li><strong>AI explainability</strong>: Verified AI models for
+regulatory acceptance (no competitor offers)</li>
+<li><strong>Compliance automation</strong>: Automated validation
+artifacts (FDA, DO-178C, ISO)—50% time reduction</li>
+<li><strong>Cloud-native</strong>: Modern architecture versus legacy
+desktop tools</li>
+<li><strong>ROI focus</strong>: $250K-2.5M savings per project; 5-10x
+return on investment</li>
+</ol>
 <p><strong>Pricing Strategy</strong>: Position as premium value between
 open-source Python (free but no guarantees) and enterprise cloud
 platforms ($100K+/year but no instrument integration): - Academic tier:
@@ -1009,42 +1114,63 @@ analytics across customer base, solver optimization</p>
     style C fill:#4CAF50
     style D fill:#2196F3
     style E fill:#FF9800</code></pre>
-<p><strong>Rationale</strong>: - <strong>Privacy</strong>: 78% of SRS
-customers require on-premises data retention (pharmaceutical, aerospace,
-semiconductor) - <strong>Performance</strong>: Local verification 2-3x
-faster than cloud (&lt;100ms versus 200-300ms with network latency) -
-<strong>Cost</strong>: High-throughput labs (&gt;10K verifications/day)
-save $1.5M over 5 years versus pure cloud ($275K edge versus $1.8M
-cloud) - <strong>Flexibility</strong>: Customers choose deployment model
-based on requirements; cloud optional not mandatory</p>
+<p><strong>Rationale</strong>:</p>
+<ul>
+<li><strong>Privacy</strong>: 78% of SRS customers require on-premises
+data retention (pharmaceutical, aerospace, semiconductor)</li>
+<li><strong>Performance</strong>: Local verification 2-3x faster than
+cloud (&lt;100ms versus 200-300ms with network latency)</li>
+<li><strong>Cost</strong>: High-throughput labs (&gt;10K
+verifications/day) save $1.5M over 5 years versus pure cloud ($275K edge
+versus $1.8M cloud)</li>
+<li><strong>Flexibility</strong>: Customers choose deployment model
+based on requirements; cloud optional not mandatory</li>
+</ul>
 <h4 id="core-technology-stack">Core Technology Stack</h4>
-<p><strong>Formal Verification Engine</strong>: - <strong>SMT
-Solver</strong>: Z3 Theorem Prover (Microsoft Research,
-production-ready) - <strong>Verification Approach</strong>: SMT-LIB2
-encoding of signal processing algorithms with property-based
-verification - <strong>Properties Verified</strong>: Bounded error,
-numerical stability, linearity, energy conservation, causality,
-Hermitian symmetry - <strong>Performance</strong>: 95% of verifications
-complete within 100ms target (benchmarked)</p>
-<p><strong>AI Analysis Engine</strong>: - <strong>Frameworks</strong>:
-PyTorch/TensorFlow for model training - <strong>Algorithms</strong>:
-Anomaly detection (isolation forest, autoencoders), pattern recognition
-(CNN/RNN), predictive diagnostics - <strong>Explainability</strong>:
-SHAP values, attention mechanisms, feature importance for regulatory
-acceptance - <strong>Performance</strong>: &lt;100ms inference latency
-for typical measurement analysis</p>
-<p><strong>Integration Layer</strong>: - <strong>Plugin
-Architecture</strong>: VerifiedTask base class extends srsgui.Task -
-<strong>Driver Support</strong>: PyMeasure, QCoDeS, standalone API -
-<strong>Backward Compatibility</strong>: 100% (no breaking changes to
-existing SRS customer code) - <strong>Configuration</strong>:
-.taskconfig files for verification policies</p>
-<p><strong>User Interface</strong>: - <strong>Framework</strong>: Qt
-(matches SRS srsgui) - <strong>Design</strong>: Three-tier information
-hierarchy (at-a-glance indicators, summary panels, detailed inspection)
-- <strong>Natural Language</strong>: Translates SMT output to
-domain-specific explanations - <strong>Export</strong>: PDF reports for
-regulatory submissions</p>
+<p><strong>Formal Verification Engine</strong>:</p>
+<ul>
+<li><strong>SMT Solver</strong>: Z3 Theorem Prover (Microsoft Research,
+production-ready)</li>
+<li><strong>Verification Approach</strong>: SMT-LIB2 encoding of signal
+processing algorithms with property-based verification</li>
+<li><strong>Properties Verified</strong>: Bounded error, numerical
+stability, linearity, energy conservation, causality, Hermitian
+symmetry</li>
+<li><strong>Performance</strong>: 95% of verifications complete within
+100ms target (benchmarked)</li>
+</ul>
+<p><strong>AI Analysis Engine</strong>:</p>
+<ul>
+<li><strong>Frameworks</strong>: PyTorch/TensorFlow for model
+training</li>
+<li><strong>Algorithms</strong>: Anomaly detection (isolation forest,
+autoencoders), pattern recognition (CNN/RNN), predictive
+diagnostics</li>
+<li><strong>Explainability</strong>: SHAP values, attention mechanisms,
+feature importance for regulatory acceptance</li>
+<li><strong>Performance</strong>: &lt;100ms inference latency for
+typical measurement analysis</li>
+</ul>
+<p><strong>Integration Layer</strong>:</p>
+<ul>
+<li><strong>Plugin Architecture</strong>: VerifiedTask base class
+extends srsgui.Task</li>
+<li><strong>Driver Support</strong>: PyMeasure, QCoDeS, standalone
+API</li>
+<li><strong>Backward Compatibility</strong>: 100% (no breaking changes
+to existing SRS customer code)</li>
+<li><strong>Configuration</strong>: .taskconfig files for verification
+policies</li>
+</ul>
+<p><strong>User Interface</strong>:</p>
+<ul>
+<li><strong>Framework</strong>: Qt (matches SRS srsgui)</li>
+<li><strong>Design</strong>: Three-tier information hierarchy
+(at-a-glance indicators, summary panels, detailed inspection)</li>
+<li><strong>Natural Language</strong>: Translates SMT output to
+domain-specific explanations</li>
+<li><strong>Export</strong>: PDF reports for regulatory submissions</li>
+</ul>
 <h3 id="technical-validation-results">Technical Validation Results</h3>
 <h4 id="performance-benchmarks">Performance Benchmarks</h4>
 <p><strong>Signal Processing Algorithm Verification</strong> (measured
@@ -1161,12 +1287,15 @@ balancing investment, market access, and risk:</p>
 
     section Phase 3: Specialized
     AS9100 Aerospace (Optional)       :p3a, 2029-01, 12M</code></pre>
-<p><strong>Investment Summary</strong>: - Phase 1 (Foundation): $1.2M
-over 18 months → Opens pharmaceutical and laboratory testing markets
-(~$14M addressable) - Phase 2 (Medical Device): $1.4M over 24 months →
-Opens medical device testing and IVD markets (~$10M addressable) - Phase
-3 (Specialized): $400K+ as needed → Aerospace and specialized
-markets</p>
+<p><strong>Investment Summary</strong>:</p>
+<ul>
+<li>Phase 1 (Foundation): $1.2M over 18 months → Opens pharmaceutical
+and laboratory testing markets (~$14M addressable)</li>
+<li>Phase 2 (Medical Device): $1.4M over 24 months → Opens medical
+device testing and IVD markets (~$10M addressable)</li>
+<li>Phase 3 (Specialized): $400K+ as needed → Aerospace and specialized
+markets</li>
+</ul>
 <p><strong>Total Investment</strong>: $2.6M (Phase 1+2) over 36
 months</p>
 <h3 id="phase-1-foundation-certifications-months-1-18-1.2m">Phase 1:
@@ -1175,14 +1304,17 @@ Foundation Certifications (Months 1-18, $1.2M)</h3>
 Laboratory Accreditation Support</h4>
 <p><strong>Target Market</strong>: 60,000 ISO 17025 accredited
 laboratories globally; 5,000-8,000 using SRS instruments</p>
-<p><strong>Key Requirements</strong>: - <strong>Software validation
-(Clause 6.4.13)</strong>: Commercial off-the-shelf software used within
-intended range can be considered validated; configuration management
-required - <strong>Method validation (Clause 7.2.2)</strong>:
-Non-standard methods (AI algorithms) require comprehensive validation
-demonstrating accuracy, precision, specificity, range, robustness -
-<strong>Measurement uncertainty (Clause 7.6)</strong>: All results must
-include uncertainty evaluation</p>
+<p><strong>Key Requirements</strong>:</p>
+<ul>
+<li><strong>Software validation (Clause 6.4.13)</strong>: Commercial
+off-the-shelf software used within intended range can be considered
+validated; configuration management required</li>
+<li><strong>Method validation (Clause 7.2.2)</strong>: Non-standard
+methods (AI algorithms) require comprehensive validation demonstrating
+accuracy, precision, specificity, range, robustness</li>
+<li><strong>Measurement uncertainty (Clause 7.6)</strong>: All results
+must include uncertainty evaluation</li>
+</ul>
 <p><strong>Hupyy Advantage</strong>: Formal verification reduces
 computational uncertainty component by 5× (from ±0.5% to ±0.01%),
 enabling total measurement uncertainty reduction of 15-20% versus
@@ -1197,20 +1329,26 @@ months.</p>
 Compliance</h4>
 <p><strong>Target Market</strong>: Pharmaceutical and biotech
 laboratories requiring electronic records and signatures</p>
-<p><strong>Key Requirements</strong>: - <strong>Audit trails</strong>:
-Comprehensive, immutable logging of all data operations with
-cryptographic integrity protection - <strong>Electronic
-signatures</strong>: Unique user identification, password controls,
-signature-record binding, signature manifestation -
-<strong>Validation</strong>: IQ/OQ/PQ per GAMP 5 methodology -
-<strong>Data integrity</strong>: ALCOA+ principles (Attributable,
+<p><strong>Key Requirements</strong>:</p>
+<ul>
+<li><strong>Audit trails</strong>: Comprehensive, immutable logging of
+all data operations with cryptographic integrity protection</li>
+<li><strong>Electronic signatures</strong>: Unique user identification,
+password controls, signature-record binding, signature
+manifestation</li>
+<li><strong>Validation</strong>: IQ/OQ/PQ per GAMP 5 methodology</li>
+<li><strong>Data integrity</strong>: ALCOA+ principles (Attributable,
 Legible, Contemporaneous, Original, Accurate, Complete, Consistent,
-Enduring, Available)</p>
-<p><strong>Implementation Approach</strong>: - Audit trail module:
-Automated logging with hash chain integrity - Electronic signature
-module: Username + password (most common, least expensive); biometric
-and PKI options available - Validation templates: Pre-validated IQ/OQ/PQ
-documentation reducing customer effort from 6-12 months to 6-8 weeks</p>
+Enduring, Available)</li>
+</ul>
+<p><strong>Implementation Approach</strong>:</p>
+<ul>
+<li>Audit trail module: Automated logging with hash chain integrity</li>
+<li>Electronic signature module: Username + password (most common, least
+expensive); biometric and PKI options available</li>
+<li>Validation templates: Pre-validated IQ/OQ/PQ documentation reducing
+customer effort from 6-12 months to 6-8 weeks</li>
+</ul>
 <p><strong>Formal Verification Competitive Advantage</strong>:
 Traditional validation provides statistical confidence from testing;
 formal verification provides mathematical proof of algorithm
@@ -1222,10 +1360,15 @@ from planning to production release</p>
 Management System</h4>
 <p><strong>Purpose</strong>: Foundation for all medical device
 certifications; demonstrates quality management processes</p>
-<p><strong>Key Processes</strong>: - Document management system - Design
-control process (per IEC 62304) - Change control and CAPA (Corrective
-and Preventive Action) - Supplier management (for SOUP - Software of
-Unknown Provenance) - Internal audit program - Management review</p>
+<p><strong>Key Processes</strong>:</p>
+<ul>
+<li>Document management system</li>
+<li>Design control process (per IEC 62304)</li>
+<li>Change control and CAPA (Corrective and Preventive Action)</li>
+<li>Supplier management (for SOUP - Software of Unknown Provenance)</li>
+<li>Internal audit program</li>
+<li>Management review</li>
+</ul>
 <p><strong>Investment</strong>: $380K (implementation) + $60K annually
 (maintenance) <strong>Timeline</strong>: 14-18 months to
 certification</p>
@@ -1237,22 +1380,34 @@ certifications; demonstrates commitment to quality.</p>
 Notification</h4>
 <p><strong>Pathway</strong>: 510(k) Premarket Notification for Class II
 medical device software</p>
-<p><strong>Strategy</strong>: - <strong>Predicate device</strong>:
-Existing cleared laboratory analytical software - <strong>Substantial
-equivalence argument</strong>: AI + formal verification provides
-equivalent/superior safety and effectiveness - <strong>Level of
-Concern</strong>: Moderate (software influences medical decisions but
-with human oversight)</p>
-<p><strong>Documentation Requirements</strong>: - Full IEC 62304
-software lifecycle documentation (Class B/C standards) - Cybersecurity
-documentation per FDA 2023 guidance - Software validation including
-formal verification white paper for reviewers - Clinical evaluation
-based on beta testing data and literature review</p>
-<p><strong>Formal Verification Communication Strategy</strong>: - White
-paper: “Formal Verification for Regulatory Review” (non-technical
-explanation for FDA reviewers) - Tutorial appendix in submission -
-Emphasize as <strong>additional</strong> assurance (not replacement for
-testing) - Offer to present approach in pre-submission meeting</p>
+<p><strong>Strategy</strong>:</p>
+<ul>
+<li><strong>Predicate device</strong>: Existing cleared laboratory
+analytical software</li>
+<li><strong>Substantial equivalence argument</strong>: AI + formal
+verification provides equivalent/superior safety and effectiveness</li>
+<li><strong>Level of Concern</strong>: Moderate (software influences
+medical decisions but with human oversight)</li>
+</ul>
+<p><strong>Documentation Requirements</strong>:</p>
+<ul>
+<li>Full IEC 62304 software lifecycle documentation (Class B/C
+standards)</li>
+<li>Cybersecurity documentation per FDA 2023 guidance</li>
+<li>Software validation including formal verification white paper for
+reviewers</li>
+<li>Clinical evaluation based on beta testing data and literature
+review</li>
+</ul>
+<p><strong>Formal Verification Communication Strategy</strong>:</p>
+<ul>
+<li>White paper: “Formal Verification for Regulatory Review”
+(non-technical explanation for FDA reviewers)</li>
+<li>Tutorial appendix in submission</li>
+<li>Emphasize as <strong>additional</strong> assurance (not replacement
+for testing)</li>
+<li>Offer to present approach in pre-submission meeting</li>
+</ul>
 <p><strong>Timeline</strong>: 18-24 months (including pre-submission
 meeting, submission preparation, FDA review, potential deficiency
 response) <strong>Cost</strong>: $770K <strong>Success
@@ -1264,13 +1419,20 @@ testing and IVD markets; strong competitive differentiation.</p>
 <p><strong>Classification</strong>: Class IIa (moderate risk
 software)</p>
 <p><strong>Approach</strong>: Notified Body conformity assessment</p>
-<p><strong>Standards Compliance</strong>: - IEC 62304 (medical device
-software lifecycle) - ISO 13485 (quality management system) - ISO 14971
-(risk management) - IEC 82304-1 (health software general
-requirements)</p>
-<p><strong>Documentation</strong>: - Clinical evaluation (literature
-review + beta testing data + PMCF plan) - Technical documentation file -
-Declaration of conformity</p>
+<p><strong>Standards Compliance</strong>:</p>
+<ul>
+<li>IEC 62304 (medical device software lifecycle)</li>
+<li>ISO 13485 (quality management system)</li>
+<li>ISO 14971 (risk management)</li>
+<li>IEC 82304-1 (health software general requirements)</li>
+</ul>
+<p><strong>Documentation</strong>:</p>
+<ul>
+<li>Clinical evaluation (literature review + beta testing data + PMCF
+plan)</li>
+<li>Technical documentation file</li>
+<li>Declaration of conformity</li>
+</ul>
 <p><strong>Timeline</strong>: 12-18 months (leveraging FDA work for
 efficiency) <strong>Cost</strong>: $630K <strong>Market Impact</strong>:
 European Economic Area access (30+ countries)</p>
@@ -1385,11 +1547,14 @@ Hupyy engineers + 0.5-2.0 SRS engineers (FTE average)</p>
 1: Pilot Implementation - SR860 Lock-In Amplifier (4 Months, $155K)</h3>
 <p><strong>Objective</strong>: Validate technical feasibility, user
 acceptance, and commercial viability with single instrument</p>
-<p><strong>Key Milestones</strong>: - <strong>Month 1</strong>:
-Architecture and Requirements Approval - Joint Hupyy-SRS kickoff and
-requirements gathering - SR860 DSP algorithm analysis and technical
-design - 3-5 beta test sites identified</p>
+<p><strong>Key Milestones</strong>:</p>
 <ul>
+<li><strong>Month 1</strong>: Architecture and Requirements Approval
+<ul>
+<li>Joint Hupyy-SRS kickoff and requirements gathering</li>
+<li>SR860 DSP algorithm analysis and technical design</li>
+<li>3-5 beta test sites identified</li>
+</ul></li>
 <li><strong>Month 2</strong>: Core Technology Demonstration
 <ul>
 <li>Formal verification framework for SR860 operations</li>
@@ -1415,12 +1580,19 @@ changes - User: &gt;80% satisfaction (4.0/5.0), 3+ documented error
 detection cases, no critical bugs - Commercial: &gt;60% pricing
 acceptance, &gt;40% purchase intent - Architecture: Validated for Phase
 2 scalability with &lt;30% rework</p>
-<p><strong>Resource Allocation</strong>: - Hupyy: 2 engineers @ 90% =
-7.2 FTE-months ($110K) - SRS: 1 engineer @ 50% = 2.0 FTE-months ($40K) -
-Infrastructure: $5.5K</p>
-<p><strong>Deliverables</strong>: - Working SR860 verification software
-- Beta testing results and user feedback - Pilot assessment report with
-Phase 2 business case - Go/No-Go decision documentation</p>
+<p><strong>Resource Allocation</strong>:</p>
+<ul>
+<li>Hupyy: 2 engineers @ 90% = 7.2 FTE-months ($110K)</li>
+<li>SRS: 1 engineer @ 50% = 2.0 FTE-months ($40K)</li>
+<li>Infrastructure: $5.5K</li>
+</ul>
+<p><strong>Deliverables</strong>:</p>
+<ul>
+<li>Working SR860 verification software</li>
+<li>Beta testing results and user feedback</li>
+<li>Pilot assessment report with Phase 2 business case</li>
+<li>Go/No-Go decision documentation</li>
+</ul>
 <h3 id="phase-2-expansion-to-rga-and-spectrum-analyzers-3-months-187k">Phase
 2: Expansion to RGA and Spectrum Analyzers (3 Months, $187K)</h3>
 <p><strong>Objective</strong>: Validate scalability of platform approach
@@ -1428,19 +1600,29 @@ across multiple product families</p>
 <p><strong>Scope</strong>: Expand to 3 product families: - SR860 Lock-In
 Amplifier (from Phase 1) - RGA (Residual Gas Analyzer) - Spectrum
 Analyzers</p>
-<p><strong>Key Activities</strong>: - Leverage Phase 1 architecture
-(&gt;70% code reuse) - RGA and spectrum analyzer-specific algorithm
-verification - Expanded beta testing (5-10 sites across product lines) -
-Commercial launch preparation (licensing, distribution, marketing)</p>
-<p><strong>Resource Allocation</strong>: - Hupyy: 2 engineers @ 90% =
-5.4 FTE-months ($82.5K) - SRS: 2 engineers @ 60% + 1 PM @ 25% = 4.35
-FTE-months ($87K) - Infrastructure and marketing: $18.9K</p>
+<p><strong>Key Activities</strong>:</p>
+<ul>
+<li>Leverage Phase 1 architecture (&gt;70% code reuse)</li>
+<li>RGA and spectrum analyzer-specific algorithm verification</li>
+<li>Expanded beta testing (5-10 sites across product lines)</li>
+<li>Commercial launch preparation (licensing, distribution,
+marketing)</li>
+</ul>
+<p><strong>Resource Allocation</strong>:</p>
+<ul>
+<li>Hupyy: 2 engineers @ 90% = 5.4 FTE-months ($82.5K)</li>
+<li>SRS: 2 engineers @ 60% + 1 PM @ 25% = 4.35 FTE-months ($87K)</li>
+<li>Infrastructure and marketing: $18.9K</li>
+</ul>
 <p><strong>Commercial Milestone</strong>: First revenue ($90K-150K
 bookings) from 3-5 customers purchasing multi-product bundles</p>
-<p><strong>Success Criteria</strong>: - Code reuse: &gt;70% (validates
-platform approach efficiency) - Development velocity: Each new product
-takes 1.2-1.5 FTE-months (versus 3.6 for SR860 ground-up) - Customer
-acquisition: 3-5 paying customers by end of Phase 2</p>
+<p><strong>Success Criteria</strong>:</p>
+<ul>
+<li>Code reuse: &gt;70% (validates platform approach efficiency)</li>
+<li>Development velocity: Each new product takes 1.2-1.5 FTE-months
+(versus 3.6 for SR860 ground-up)</li>
+<li>Customer acquisition: 3-5 paying customers by end of Phase 2</li>
+</ul>
 <h3 id="phase-3-full-product-line-integration-6-months-520k">Phase 3:
 Full Product Line Integration (6 Months, $520K)</h3>
 <p><strong>Objective</strong>: Achieve comprehensive SRS product
@@ -1449,24 +1631,39 @@ portfolio coverage enabling white-label and enterprise offerings</p>
 Lock-in amplifiers (SR860, SR850, etc.) - Residual gas analyzers (RGA) -
 Spectrum analyzers - Frequency counters - Function generators -
 Temperature controllers - Delay generators - Other SRS instruments</p>
-<p><strong>Key Activities</strong>: - Parallel development across
-product families (map-reduce approach) - Platform infrastructure
-hardening (scalability, security, compliance) - White-labeling
-capabilities for SRS OEM bundling - Steady-state operations team hiring
-(Month 13): - Dedicated Product Manager (1 FTE, $120K/year) - Customer
-Success Manager (1 FTE, $100K/year) - Support Engineer (1 FTE,
-$90K/year)</p>
-<p><strong>Resource Allocation</strong>: - Hupyy: 3 engineers @ 95% =
-17.1 FTE-months ($266K) - SRS: 2 engineers @ 75% + 1 PM @ 50% = 12.0
-FTE-months ($174K) - Steady-state hiring (Month 13): $25.5K (1 month
-prorated) - Infrastructure and marketing: $58.2K</p>
+<p><strong>Key Activities</strong>:</p>
+<ul>
+<li>Parallel development across product families (map-reduce
+approach)</li>
+<li>Platform infrastructure hardening (scalability, security,
+compliance)</li>
+<li>White-labeling capabilities for SRS OEM bundling</li>
+<li>Steady-state operations team hiring (Month 13):
+<ul>
+<li>Dedicated Product Manager (1 FTE, $120K/year)</li>
+<li>Customer Success Manager (1 FTE, $100K/year)</li>
+<li>Support Engineer (1 FTE, $90K/year)</li>
+</ul></li>
+</ul>
+<p><strong>Resource Allocation</strong>:</p>
+<ul>
+<li>Hupyy: 3 engineers @ 95% = 17.1 FTE-months ($266K)</li>
+<li>SRS: 2 engineers @ 75% + 1 PM @ 50% = 12.0 FTE-months ($174K)</li>
+<li>Steady-state hiring (Month 13): $25.5K (1 month prorated)</li>
+<li>Infrastructure and marketing: $58.2K</li>
+</ul>
 <p><strong>Commercial Milestone</strong>: Cumulative bookings
 $600K-1.25M with 15-25 total customers</p>
-<p><strong>Success Criteria</strong>: - Product coverage: 20-25 SRS
-product families (comprehensive portfolio) - Platform efficiency:
-&lt;$30K-40K development cost per product family (economies of scale) -
-Customer base: 15-25 customers with diversification across segments -
-Operations transition: Steady-state team hired and onboarded</p>
+<p><strong>Success Criteria</strong>:</p>
+<ul>
+<li>Product coverage: 20-25 SRS product families (comprehensive
+portfolio)</li>
+<li>Platform efficiency: &lt;$30K-40K development cost per product
+family (economies of scale)</li>
+<li>Customer base: 15-25 customers with diversification across
+segments</li>
+<li>Operations transition: Steady-state team hired and onboarded</li>
+</ul>
 <h3 id="resource-requirements-summary">Resource Requirements
 Summary</h3>
 <p><strong>Development Investment</strong> (13 months): -
@@ -1474,38 +1671,53 @@ Summary</h3>
 $453.5K (52%) - SRS engineering: $331.5K (38%) -
 <strong>Infrastructure</strong>: $44.6K (5%) - <strong>Marketing &amp;
 Sales</strong>: $38K (4.5%) - <strong>Total</strong>: $867.6K</p>
-<p><strong>Efficiency Metrics</strong>: - Cost per product family:
-$30K-40K (versus $150K-300K traditional ground-up development) -
-Engineering months per product: 1.2-1.5 FTE-months (platform approach
-60-70% more efficient) - Total output: 20-25 product families, 50K-75K
-lines of code</p>
+<p><strong>Efficiency Metrics</strong>:</p>
+<ul>
+<li>Cost per product family: $30K-40K (versus $150K-300K traditional
+ground-up development)</li>
+<li>Engineering months per product: 1.2-1.5 FTE-months (platform
+approach 60-70% more efficient)</li>
+<li>Total output: 20-25 product families, 50K-75K lines of code</li>
+</ul>
 <p><strong>Ongoing Operations Cost</strong> (post-Phase 3): - Year 1:
 $558K/year (personnel $410K + infrastructure $48K + marketing $100K) -
 Year 2: $650K/year (15% increase for scaling) - Year 3: $750K/year (15%
 increase) - <strong>Operating margin</strong>: 63% (Year 1) improving to
 85% (Year 3) as revenue scales</p>
 <h3 id="risk-management">Risk Management</h3>
-<p><strong>Critical Path Items</strong>: 1. Architecture design (Week
-3-4): Delays cascade through entire project 2. Verification framework
-(Week 5-6): Core technology enabler; must be performant 3. AI model
-integration (Week 7-8): Critical for value proposition 4. Beta
-deployment (Week 13): First real-world validation</p>
-<p><strong>Mitigation Strategies</strong>: - Parallel exploration during
-architecture phase to avoid redesign - Proof-of-concept verification
-implementation during architecture to validate feasibility - Secure SRS
-reference datasets by Week 4 to enable parallel model training -
-Pre-qualify beta sites during Month 2 to ensure deployment readiness</p>
+<p><strong>Critical Path Items</strong>:</p>
+<ol type="1">
+<li>Architecture design (Week 3-4): Delays cascade through entire
+project</li>
+<li>Verification framework (Week 5-6): Core technology enabler; must be
+performant</li>
+<li>AI model integration (Week 7-8): Critical for value proposition</li>
+<li>Beta deployment (Week 13): First real-world validation</li>
+</ol>
+<p><strong>Mitigation Strategies</strong>:</p>
+<ul>
+<li>Parallel exploration during architecture phase to avoid
+redesign</li>
+<li>Proof-of-concept verification implementation during architecture to
+validate feasibility</li>
+<li>Secure SRS reference datasets by Week 4 to enable parallel model
+training</li>
+<li>Pre-qualify beta sites during Month 2 to ensure deployment
+readiness</li>
+</ul>
 <p><strong>Contingency Reserve</strong>: $130K (15% of total budget)
 allocated for: - Engineering resource gaps/overruns: $60K -
 Infrastructure/tools underestimation: $20K - Marketing/launch costs:
 $20K - Unplanned requirements: $30K</p>
-<p><strong>Phase Gate Reviews</strong>: - <strong>Phase 1 Gate (Month
-4)</strong>: Go/No-Go decision based on technical feasibility, user
-acceptance, commercial viability - <strong>Phase 2 Gate (Month
-7)</strong>: Validate Phase 3 resource plan based on code reuse rates,
-development velocity - <strong>Phase 3 Gate (Month 13)</strong>: Confirm
-steady-state operations team and transition plan based on revenue
-traction</p>
+<p><strong>Phase Gate Reviews</strong>:</p>
+<ul>
+<li><strong>Phase 1 Gate (Month 4)</strong>: Go/No-Go decision based on
+technical feasibility, user acceptance, commercial viability</li>
+<li><strong>Phase 2 Gate (Month 7)</strong>: Validate Phase 3 resource
+plan based on code reuse rates, development velocity</li>
+<li><strong>Phase 3 Gate (Month 13)</strong>: Confirm steady-state
+operations team and transition plan based on revenue traction</li>
+</ul>
 <hr />
 <h2 id="financial-analysis">Financial Analysis</h2>
 <h3 id="revenue-model">Revenue Model</h3>
@@ -1597,14 +1809,21 @@ Timeline</h4>
 </tr>
 </tbody>
 </table>
-<p><strong>Growth Trajectory</strong>: - <strong>Year 1</strong>:
-$1.2M-2.0M ARR (30-50 customers) - <strong>Year 2</strong>: $3.0M ARR
-(customer base expansion + renewals/upsells) - <strong>Year 3</strong>:
-$5.0M ARR (market penetration acceleration) - <strong>Year 4-5</strong>:
-$8M-12M ARR (category leadership position)</p>
-<p><strong>Revenue Mix</strong>: - Subscription: 60-70% (Year 1) →
-70-80% (mature) - Professional services: 30-40% (Year 1) → 20-30%
-(mature)</p>
+<p><strong>Growth Trajectory</strong>:</p>
+<ul>
+<li><strong>Year 1</strong>: $1.2M-2.0M ARR (30-50 customers)</li>
+<li><strong>Year 2</strong>: $3.0M ARR (customer base expansion +
+renewals/upsells)</li>
+<li><strong>Year 3</strong>: $5.0M ARR (market penetration
+acceleration)</li>
+<li><strong>Year 4-5</strong>: $8M-12M ARR (category leadership
+position)</li>
+</ul>
+<p><strong>Revenue Mix</strong>:</p>
+<ul>
+<li>Subscription: 60-70% (Year 1) → 70-80% (mature)</li>
+<li>Professional services: 30-40% (Year 1) → 20-30% (mature)</li>
+</ul>
 <h3 id="unit-economics">Unit Economics</h3>
 <p><strong>Customer Acquisition Cost (CAC)</strong>: $10K-15K - Sales
 effort: $5K-8K (0.5-1 month sales cycle, $10K/month loaded cost) -
@@ -1617,9 +1836,12 @@ replacement cycles)</p>
 <p><strong>LTV/CAC Ratio</strong>: 4-7 (healthy SaaS benchmark: &gt;3)
 <strong>CAC Payback Period</strong>: 6-12 months (industry benchmark:
 12-18 months)</p>
-<p><strong>Gross Margin</strong>: - Software licensing: 90-95% (minimal
-COGS) - Infrastructure (cloud hosting): 5-10% of revenue - <strong>Net
-gross margin: 85-90%</strong></p>
+<p><strong>Gross Margin</strong>:</p>
+<ul>
+<li>Software licensing: 90-95% (minimal COGS)</li>
+<li>Infrastructure (cloud hosting): 5-10% of revenue</li>
+<li><strong>Net gross margin: 85-90%</strong></li>
+</ul>
 <h3 id="investment-and-returns">Investment and Returns</h3>
 <h4 id="total-investment-required">Total Investment Required</h4>
 <p><strong>Development Investment</strong> (13 months): $755K - Phase 1:
@@ -1637,17 +1859,27 @@ Analysis</h4>
 <p><strong>Scenario: Bootstrap with SRS Partnership</strong></p>
 <p><strong>Investment</strong>: $1.31M (development + Year 1
 operations)</p>
-<p><strong>Year 1 Returns</strong>: - Revenue: $1.5M - Operating profit:
-$1.5M × 63% margin = $945K - Cumulative cash flow: -$1.31M + $945K =
--$365K</p>
-<p><strong>Year 2 Returns</strong>: - Revenue: $3.0M - Operating profit:
-$3.0M × 78% margin = $2.34M - Cumulative cash flow: -$365K + $2.34M =
-+$1.98M</p>
+<p><strong>Year 1 Returns</strong>:</p>
+<ul>
+<li>Revenue: $1.5M</li>
+<li>Operating profit: $1.5M × 63% margin = $945K</li>
+<li>Cumulative cash flow: -$1.31M + $945K = -$365K</li>
+</ul>
+<p><strong>Year 2 Returns</strong>:</p>
+<ul>
+<li>Revenue: $3.0M</li>
+<li>Operating profit: $3.0M × 78% margin = $2.34M</li>
+<li>Cumulative cash flow: -$365K + $2.34M = +$1.98M</li>
+</ul>
 <p><strong>Payback Period</strong>: 24 months (18 months operational
 break-even + 6 months development cost recovery)</p>
-<p><strong>5-Year Cumulative Returns</strong>: - Year 1-2 profit: $1.98M
-- Year 3 profit: $5.0M × 85% = $4.25M - Year 4-5 profit: $6M/year × 85%
-× 2 = $10.2M - <strong>Total 5-year profit: $16.43M</strong></p>
+<p><strong>5-Year Cumulative Returns</strong>:</p>
+<ul>
+<li>Year 1-2 profit: $1.98M</li>
+<li>Year 3 profit: $5.0M × 85% = $4.25M</li>
+<li>Year 4-5 profit: $6M/year × 85% × 2 = $10.2M</li>
+<li><strong>Total 5-year profit: $16.43M</strong></li>
+</ul>
 <p><strong>5-Year ROI</strong>: 12.5x or <strong>1,154%</strong></p>
 <p><strong>Internal Rate of Return (IRR)</strong>: ~45% <strong>Net
 Present Value (NPV, 15% discount)</strong>: $10.2M</p>
@@ -1659,9 +1891,12 @@ positive</strong></p>
 <p><strong>Optimistic Scenario</strong> (50% higher market penetration):
 - 5-year revenue: $18.9M - 5-year profit: $14.8M - ROI: 11.3x or
 <strong>1,031%</strong> - Payback: Year 2</p>
-<p><strong>Break-Even Requirements</strong>: - Monthly operational
-break-even: $30K revenue (10-12 customers at steady state) - Total
-investment recovery: 15-18 months from Phase 1 start</p>
+<p><strong>Break-Even Requirements</strong>:</p>
+<ul>
+<li>Monthly operational break-even: $30K revenue (10-12 customers at
+steady state)</li>
+<li>Total investment recovery: 15-18 months from Phase 1 start</li>
+</ul>
 <h3 id="funding-strategy-options">Funding Strategy Options</h3>
 <p><strong>Option A: Bootstrap with SRS Co-Investment</strong>
 (RECOMMENDED) - SRS contributes engineering resources and beta access
@@ -1718,21 +1953,30 @@ acquisition</p>
 <p><strong>Probability</strong>: Medium (30%) <strong>Impact</strong>:
 High (blocks commercialization if unresolved) <strong>Phase</strong>:
 Phase 1 (Months 1-4)</p>
-<p><strong>Mitigation Strategies</strong>: 1. <strong>Proof-of-Concept
-Validation (Week 3-4)</strong>: Implement POC before full development;
-measure actual overhead (target &lt;5ms for 50% margin) 2.
-<strong>Selective Verification Architecture</strong>: Verify subset of
-operations (most error-prone) or probabilistic verification (sample of
-measurements) 3. <strong>Performance Optimization</strong>: Implement
-verification in Rust/C for critical paths; use JIT compilation;
-parallelize where possible 4. <strong>Architecture Alternative</strong>:
-Pivot to runtime verification (observe during execution) versus static
-verification if needed</p>
-<p><strong>Contingency Plan</strong>: - If overhead 10-20ms: Implement
-as optional feature, disabled by default; market as “enhanced validation
-mode” - If overhead &gt;20ms: Pivot to post-processing verification only
-(not real-time) - If verification infeasible: Pivot to AI-only analysis
-without formal verification; differentiate on AI quality</p>
+<p><strong>Mitigation Strategies</strong>:</p>
+<ol type="1">
+<li><strong>Proof-of-Concept Validation (Week 3-4)</strong>: Implement
+POC before full development; measure actual overhead (target &lt;5ms for
+50% margin)</li>
+<li><strong>Selective Verification Architecture</strong>: Verify subset
+of operations (most error-prone) or probabilistic verification (sample
+of measurements)</li>
+<li><strong>Performance Optimization</strong>: Implement verification in
+Rust/C for critical paths; use JIT compilation; parallelize where
+possible</li>
+<li><strong>Architecture Alternative</strong>: Pivot to runtime
+verification (observe during execution) versus static verification if
+needed</li>
+</ol>
+<p><strong>Contingency Plan</strong>:</p>
+<ul>
+<li>If overhead 10-20ms: Implement as optional feature, disabled by
+default; market as “enhanced validation mode”</li>
+<li>If overhead &gt;20ms: Pivot to post-processing verification only
+(not real-time)</li>
+<li>If verification infeasible: Pivot to AI-only analysis without formal
+verification; differentiate on AI quality</li>
+</ul>
 <p><strong>Budget Impact</strong>: $20K-40K additional engineering for
 optimization</p>
 <h4 id="risk-2-competitive-market-entry-during-phase-2-3">Risk 2:
@@ -1742,51 +1986,71 @@ announces competitive AI-verified analysis offering during Hupyy
 development</p>
 <p><strong>Probability</strong>: Medium (40%) <strong>Impact</strong>:
 High (market positioning, pricing pressure, customer acquisition)</p>
-<p><strong>Mitigation Strategies</strong>: 1. <strong>Aggressive
-Time-to-Market</strong>: 13-month development timeline creates 2-3 year
-head start window 2. <strong>IP Protection</strong>: File patents on
-formal verification methodology for scientific instruments 3.
-<strong>Customer Lock-In</strong>: Early customer relationships create
-switching costs; SRS exclusive partnership 4. <strong>Vertical
-Depth</strong>: Pharmaceutical, semiconductor, aerospace expertise
-versus incumbent breadth 5. <strong>Regulatory Certifications</strong>:
-FDA 510(k), ISO 13485 create barrier to entry</p>
-<p><strong>Competitive Response Analysis</strong>: -
-<strong>LabVIEW/MATLAB timeline to competitive offering</strong>: 2-3
-years due to architectural constraints (desktop-centric requiring cloud
-rebuild), lack of formal verification expertise (specialized talent
-acquisition), organizational inertia - <strong>Hupyy first-mover
-advantages</strong>: Category definition, early customer acquisition,
-regulatory proof points (first to achieve FDA validation), partner locks
-(exclusive SRS integrations)</p>
-<p><strong>Contingency Plan</strong>: - Accelerate Phase 3 expansion if
-competitive announcement detected - Emphasize unique vertical expertise
-and regulatory certifications - Leverage SRS partnership exclusivity</p>
+<p><strong>Mitigation Strategies</strong>:</p>
+<ol type="1">
+<li><strong>Aggressive Time-to-Market</strong>: 13-month development
+timeline creates 2-3 year head start window</li>
+<li><strong>IP Protection</strong>: File patents on formal verification
+methodology for scientific instruments</li>
+<li><strong>Customer Lock-In</strong>: Early customer relationships
+create switching costs; SRS exclusive partnership</li>
+<li><strong>Vertical Depth</strong>: Pharmaceutical, semiconductor,
+aerospace expertise versus incumbent breadth</li>
+<li><strong>Regulatory Certifications</strong>: FDA 510(k), ISO 13485
+create barrier to entry</li>
+</ol>
+<p><strong>Competitive Response Analysis</strong>:</p>
+<ul>
+<li><strong>LabVIEW/MATLAB timeline to competitive offering</strong>:
+2-3 years due to architectural constraints (desktop-centric requiring
+cloud rebuild), lack of formal verification expertise (specialized
+talent acquisition), organizational inertia</li>
+<li><strong>Hupyy first-mover advantages</strong>: Category definition,
+early customer acquisition, regulatory proof points (first to achieve
+FDA validation), partner locks (exclusive SRS integrations)</li>
+</ul>
+<p><strong>Contingency Plan</strong>:</p>
+<ul>
+<li>Accelerate Phase 3 expansion if competitive announcement
+detected</li>
+<li>Emphasize unique vertical expertise and regulatory
+certifications</li>
+<li>Leverage SRS partnership exclusivity</li>
+</ul>
 <h4 id="risk-3-srs-partnership-strain-or-dissolution">Risk 3: SRS
 Partnership Strain or Dissolution</h4>
 <p><strong>Description</strong>: SRS strategic priorities shift,
 reducing engineering allocation or terminating partnership</p>
 <p><strong>Probability</strong>: Low (20%) <strong>Impact</strong>:
 Critical (loss of beachhead market, domain expertise, distribution)</p>
-<p><strong>Mitigation Strategies</strong>: 1. <strong>Executive
-Sponsorship</strong>: Secure commitment from SRS leadership (VP
-Engineering, Product Management) 2. <strong>Value
-Demonstration</strong>: Deliver early wins in Phase 1 demonstrating
-commercial potential 3. <strong>Flexible Architecture</strong>: Design
-platform to support non-SRS instruments (reduce dependency) 4.
-<strong>Quarterly Business Reviews</strong>: Ensure alignment on
-strategic priorities and resource allocation 5. <strong>Contractual
-Safeguards</strong>: Define minimum SRS engineering allocation in
-partnership agreement</p>
-<p><strong>Early Warning Indicators</strong>: - SRS resource allocation
-drops below committed levels (Week 1-4) - Strategic announcements
-suggesting software deprioritization - Key SRS champions depart or shift
-roles</p>
-<p><strong>Contingency Plan</strong>: - Negotiate pivot to different SRS
-product line if original plan affected - Expand to complementary
-instrument manufacturers (Keysight, Tektronix) earlier than planned -
-License platform to SRS as white-label offering (guaranteed revenue
-stream)</p>
+<p><strong>Mitigation Strategies</strong>:</p>
+<ol type="1">
+<li><strong>Executive Sponsorship</strong>: Secure commitment from SRS
+leadership (VP Engineering, Product Management)</li>
+<li><strong>Value Demonstration</strong>: Deliver early wins in Phase 1
+demonstrating commercial potential</li>
+<li><strong>Flexible Architecture</strong>: Design platform to support
+non-SRS instruments (reduce dependency)</li>
+<li><strong>Quarterly Business Reviews</strong>: Ensure alignment on
+strategic priorities and resource allocation</li>
+<li><strong>Contractual Safeguards</strong>: Define minimum SRS
+engineering allocation in partnership agreement</li>
+</ol>
+<p><strong>Early Warning Indicators</strong>:</p>
+<ul>
+<li>SRS resource allocation drops below committed levels (Week 1-4)</li>
+<li>Strategic announcements suggesting software deprioritization</li>
+<li>Key SRS champions depart or shift roles</li>
+</ul>
+<p><strong>Contingency Plan</strong>:</p>
+<ul>
+<li>Negotiate pivot to different SRS product line if original plan
+affected</li>
+<li>Expand to complementary instrument manufacturers (Keysight,
+Tektronix) earlier than planned</li>
+<li>License platform to SRS as white-label offering (guaranteed revenue
+stream)</li>
+</ul>
 <h3 id="high-impact-risks-moderate-probability">High-Impact Risks
 (Moderate Probability)</h3>
 <h4 id="risk-4-fda-510k-submission-delays-or-rejection">Risk 4: FDA
@@ -1796,21 +2060,27 @@ encounters regulatory obstacles</p>
 <p><strong>Probability</strong>: Low-Medium (25%)
 <strong>Impact</strong>: High (delays Phase 2 market access, increases
 cost)</p>
-<p><strong>Mitigation Strategies</strong>: 1. <strong>Pre-Submission
-Meeting</strong>: Engage FDA 6-9 months before submission; present
-formal verification approach; clarify expectations 2. <strong>Regulatory
-Expertise</strong>: Hire Regulatory Affairs Manager (Year 1); retain FDA
-510(k) consultant ($150K) 3. <strong>IEC 62304 Rigor</strong>: Design to
-Class C standards even if classified Class B (higher bar provides
-margin) 4. <strong>Formal Verification Education</strong>: White paper
-for FDA reviewers explaining methodology; emphasize as additional
-assurance</p>
-<p><strong>Contingency Plan</strong>: - If FDA raises concerns: Respond
-with additional validation data, clinical evidence, literature support -
-If timeline extends significantly: Proceed with Phase 1 markets (ISO
-17025, 21 CFR Part 11) while addressing FDA feedback - If rejection
-occurs: Pivot to software as medical device accessory (lower regulatory
-burden)</p>
+<p><strong>Mitigation Strategies</strong>:</p>
+<ol type="1">
+<li><strong>Pre-Submission Meeting</strong>: Engage FDA 6-9 months
+before submission; present formal verification approach; clarify
+expectations</li>
+<li><strong>Regulatory Expertise</strong>: Hire Regulatory Affairs
+Manager (Year 1); retain FDA 510(k) consultant ($150K)</li>
+<li><strong>IEC 62304 Rigor</strong>: Design to Class C standards even
+if classified Class B (higher bar provides margin)</li>
+<li><strong>Formal Verification Education</strong>: White paper for FDA
+reviewers explaining methodology; emphasize as additional assurance</li>
+</ol>
+<p><strong>Contingency Plan</strong>:</p>
+<ul>
+<li>If FDA raises concerns: Respond with additional validation data,
+clinical evidence, literature support</li>
+<li>If timeline extends significantly: Proceed with Phase 1 markets (ISO
+17025, 21 CFR Part 11) while addressing FDA feedback</li>
+<li>If rejection occurs: Pivot to software as medical device accessory
+(lower regulatory burden)</li>
+</ul>
 <p><strong>Budget Impact</strong>: $100K-200K additional consulting and
 validation if delays occur</p>
 <h4 id="risk-5-scope-creep-during-rapid-multi-product-expansion">Risk 5:
@@ -1819,18 +2089,25 @@ Scope Creep During Rapid Multi-Product Expansion</h4>
 pilot scope, delaying timelines and increasing budget</p>
 <p><strong>Probability</strong>: High (40%) <strong>Impact</strong>:
 Medium (delays, budget overrun 10-20%)</p>
-<p><strong>Mitigation Strategies</strong>: 1. <strong>Strict Change
-Control</strong>: Documented baseline with signed approval; change
-request process 2. <strong>Stakeholder Communication</strong>: Weekly
-alignment meetings; clearly communicate pilot scope limitations 3.
-<strong>Feature Parking Lot</strong>: Capture enhancement requests for
-Phase 2/3 roadmap without committing 4. <strong>Phase Gate
-Reviews</strong>: Monthly executive reviews with scope adherence
-metrics</p>
-<p><strong>Contingency Plan</strong>: - Defer non-essential features to
-Phase 2/3 - Extend timeline if critical features identified (invoke
-contingency budget) - Implement features as optional modules (don’t
-delay core platform)</p>
+<p><strong>Mitigation Strategies</strong>:</p>
+<ol type="1">
+<li><strong>Strict Change Control</strong>: Documented baseline with
+signed approval; change request process</li>
+<li><strong>Stakeholder Communication</strong>: Weekly alignment
+meetings; clearly communicate pilot scope limitations</li>
+<li><strong>Feature Parking Lot</strong>: Capture enhancement requests
+for Phase 2/3 roadmap without committing</li>
+<li><strong>Phase Gate Reviews</strong>: Monthly executive reviews with
+scope adherence metrics</li>
+</ol>
+<p><strong>Contingency Plan</strong>:</p>
+<ul>
+<li>Defer non-essential features to Phase 2/3</li>
+<li>Extend timeline if critical features identified (invoke contingency
+budget)</li>
+<li>Implement features as optional modules (don’t delay core
+platform)</li>
+</ul>
 <p><strong>Budget Impact</strong>: $50K-100K if major scope additions
 approved</p>
 <h3 id="operational-risks">Operational Risks</h3>
@@ -1840,17 +2117,23 @@ Departure</h4>
 during development</p>
 <p><strong>Probability</strong>: Low (10%) <strong>Impact</strong>: High
 (significant delays, knowledge loss)</p>
-<p><strong>Mitigation Strategies</strong>: 1.
-<strong>Cross-Training</strong>: Knowledge sharing throughout project;
-pair programming 2. <strong>Documentation</strong>: Comprehensive
-documentation of decisions and designs 3. <strong>Backup
-Resources</strong>: Maintain contractor network for replacement capacity
-4. <strong>Retention Incentives</strong>: Competitive compensation,
-equity vesting aligned with milestones</p>
-<p><strong>Contingency Plan</strong>: - Negotiate timeline extension
-(invoke contingency buffer) - Bring in replacement resource from
-contractor network - Simplify scope if expertise gap cannot be filled
-quickly</p>
+<p><strong>Mitigation Strategies</strong>:</p>
+<ol type="1">
+<li><strong>Cross-Training</strong>: Knowledge sharing throughout
+project; pair programming</li>
+<li><strong>Documentation</strong>: Comprehensive documentation of
+decisions and designs</li>
+<li><strong>Backup Resources</strong>: Maintain contractor network for
+replacement capacity</li>
+<li><strong>Retention Incentives</strong>: Competitive compensation,
+equity vesting aligned with milestones</li>
+</ol>
+<p><strong>Contingency Plan</strong>:</p>
+<ul>
+<li>Negotiate timeline extension (invoke contingency buffer)</li>
+<li>Bring in replacement resource from contractor network</li>
+<li>Simplify scope if expertise gap cannot be filled quickly</li>
+</ul>
 <p><strong>Budget Impact</strong>: $30K-60K for contractor rates (1.5x
 internal cost)</p>
 <h4 id="risk-7-beta-tester-recruitment-challenges">Risk 7: Beta Tester
@@ -1859,28 +2142,40 @@ Recruitment Challenges</h4>
 sites willing to participate</p>
 <p><strong>Probability</strong>: Medium (25%) <strong>Impact</strong>:
 Medium (delays validation, reduces market evidence)</p>
-<p><strong>Mitigation Strategies</strong>: 1. <strong>SRS Customer
-Relationships</strong>: Leverage SRS existing customer base and sales
-channels 2. <strong>Incentives</strong>: Free licenses (first year),
-early access features, co-authorship on case studies 3. <strong>Early
-Recruitment</strong>: Start recruitment in Week 1 (3-month lead time
-before beta deployment) 4. <strong>Internal Labs</strong>: SRS internal
-labs as backup beta sites</p>
-<p><strong>Contingency Plan</strong>: - Extend beta period to compensate
-for fewer sites - Reduce required site count from 5-10 to 3-5 if
-high-quality feedback obtained - Increase incentives (extended free
-licenses, dedicated support)</p>
+<p><strong>Mitigation Strategies</strong>:</p>
+<ol type="1">
+<li><strong>SRS Customer Relationships</strong>: Leverage SRS existing
+customer base and sales channels</li>
+<li><strong>Incentives</strong>: Free licenses (first year), early
+access features, co-authorship on case studies</li>
+<li><strong>Early Recruitment</strong>: Start recruitment in Week 1
+(3-month lead time before beta deployment)</li>
+<li><strong>Internal Labs</strong>: SRS internal labs as backup beta
+sites</li>
+</ol>
+<p><strong>Contingency Plan</strong>:</p>
+<ul>
+<li>Extend beta period to compensate for fewer sites</li>
+<li>Reduce required site count from 5-10 to 3-5 if high-quality feedback
+obtained</li>
+<li>Increase incentives (extended free licenses, dedicated support)</li>
+</ul>
 <p><strong>Budget Impact</strong>: $10K-20K additional incentives</p>
 <h3 id="risk-monitoring-and-governance">Risk Monitoring and
 Governance</h3>
 <p><strong>Risk Register</strong>: Maintained in project management
 system with weekly updates</p>
-<p><strong>Leading Indicators Dashboard</strong>: - Development velocity
-(story points per sprint) - Technical performance metrics (verification
-overhead, AI accuracy) - Customer feedback (beta tester satisfaction
-scores) - Competitive intelligence (product announcements, patent
-filings) - Partnership health (SRS resource allocation, stakeholder
-engagement)</p>
+<p><strong>Leading Indicators Dashboard</strong>:</p>
+<ul>
+<li>Development velocity (story points per sprint)</li>
+<li>Technical performance metrics (verification overhead, AI
+accuracy)</li>
+<li>Customer feedback (beta tester satisfaction scores)</li>
+<li>Competitive intelligence (product announcements, patent
+filings)</li>
+<li>Partnership health (SRS resource allocation, stakeholder
+engagement)</li>
+</ul>
 <p><strong>Quarterly Risk Reviews</strong>: Executive assessment of top
 10 risks with mitigation effectiveness evaluation</p>
 <p><strong>Contingency Reserve Management</strong>: $130K budget ($113K
@@ -1893,9 +2188,14 @@ approval</p>
 <h3 id="scoring-methodology">Scoring Methodology</h3>
 <p>Opportunity assessed using weighted rubric from
 <code>config/scoring-rubric.yml</code>:</p>
-<p><strong>Category Weights</strong>: - Market Opportunity: 25% -
-Technical Feasibility: 25% - Competitive Advantage: 20% - Execution
-Readiness: 15% - Regulatory Pathway: 15%</p>
+<p><strong>Category Weights</strong>:</p>
+<ul>
+<li>Market Opportunity: 25%</li>
+<li>Technical Feasibility: 25%</li>
+<li>Competitive Advantage: 20%</li>
+<li>Execution Readiness: 15%</li>
+<li>Regulatory Pathway: 15%</li>
+</ul>
 <p><strong>Scoring Scale</strong> (0-100 for each criterion): - 90-100:
 Exceptional - Market-leading position, minimal risk - 70-89: Strong -
 Clear advantage, manageable risks - 50-69: Moderate - Viable but
@@ -2040,12 +2340,14 @@ timeline to full regulatory coverage; FDA 510(k) success probability
 <p><strong>Regulatory Pathway Subscore</strong>: (70 × 0.4) + (65 × 0.3)
 + (60 × 0.3) = <strong>66.5/100</strong></p>
 <h3 id="total-opportunity-score">Total Opportunity Score</h3>
-<p><strong>Weighted Score Calculation</strong>: - Market Opportunity:
-77.8 × 0.25 = <strong>19.45</strong> - Technical Feasibility: 72.0 ×
-0.25 = <strong>18.00</strong> - Competitive Advantage: 80.0 × 0.20 =
-<strong>16.00</strong> - Execution Readiness: 67.6 × 0.15 =
-<strong>10.14</strong> - Regulatory Pathway: 66.5 × 0.15 =
-<strong>9.98</strong></p>
+<p><strong>Weighted Score Calculation</strong>:</p>
+<ul>
+<li>Market Opportunity: 77.8 × 0.25 = <strong>19.45</strong></li>
+<li>Technical Feasibility: 72.0 × 0.25 = <strong>18.00</strong></li>
+<li>Competitive Advantage: 80.0 × 0.20 = <strong>16.00</strong></li>
+<li>Execution Readiness: 67.6 × 0.15 = <strong>10.14</strong></li>
+<li>Regulatory Pathway: 66.5 × 0.15 = <strong>9.98</strong></li>
+</ul>
 <p><strong>TOTAL SCORE</strong>: <strong>73.57/100</strong> (rounded to
 <strong>73/100</strong>)</p>
 <h3 id="score-interpretation">Score Interpretation</h3>
@@ -2061,21 +2363,27 @@ range, just below “Strong GO” threshold. This indicates a compelling
 opportunity with clear value proposition, technical feasibility, and
 market potential, balanced by execution challenges and regulatory
 complexity requiring disciplined risk management.</p>
-<p><strong>Strengths Elevating Score</strong>: 1. <strong>Competitive
-Advantage (80/100)</strong>: Category-defining differentiation with 2-3
-year defensibility window 2. <strong>Market Opportunity
-(78/100)</strong>: Large addressable market ($960M-$1.35B SAM) with
-acute customer pain ($500K-2M per project) 3. <strong>Technical
-Feasibility (72/100)</strong>: Proven technologies with benchmark
-validation demonstrating performance feasibility</p>
-<p><strong>Factors Limiting Score</strong>: 1. <strong>Execution
-Readiness (68/100)</strong>: High dependency on SRS partnership (20%
-probability of strain, critical impact); aggressive 13-month timeline 2.
-<strong>Regulatory Pathway (65/100)</strong>: Novel application of
+<p><strong>Strengths Elevating Score</strong>:</p>
+<ol type="1">
+<li><strong>Competitive Advantage (80/100)</strong>: Category-defining
+differentiation with 2-3 year defensibility window</li>
+<li><strong>Market Opportunity (78/100)</strong>: Large addressable
+market ($960M-$1.35B SAM) with acute customer pain ($500K-2M per
+project)</li>
+<li><strong>Technical Feasibility (72/100)</strong>: Proven technologies
+with benchmark validation demonstrating performance feasibility</li>
+</ol>
+<p><strong>Factors Limiting Score</strong>:</p>
+<ol type="1">
+<li><strong>Execution Readiness (68/100)</strong>: High dependency on
+SRS partnership (20% probability of strain, critical impact); aggressive
+13-month timeline</li>
+<li><strong>Regulatory Pathway (65/100)</strong>: Novel application of
 formal verification requires reviewer education; 3+ year timeline to
-full regulatory coverage 3. <strong>Technical Risks</strong>:
-Verification performance overhead (30% probability, high impact) not
-validated until Phase 1 POC</p>
+full regulatory coverage</li>
+<li><strong>Technical Risks</strong>: Verification performance overhead
+(30% probability, high impact) not validated until Phase 1 POC</li>
+</ol>
 <p><strong>Confidence Level</strong>: <strong>High with Conditional
 Validation</strong></p>
 <p>The score of 73/100 reflects high confidence in the opportunity’s
@@ -2312,28 +2620,46 @@ focus, simplified scope, AI-only without verification) or terminate with
 minimal sunk cost ($155K learning investment)</p>
 <h3 id="success-metrics-and-tracking">Success Metrics and Tracking</h3>
 <p><strong>Phase 1 Success Dashboard</strong> (reviewed weekly):</p>
-<p><strong>Technical Metrics</strong>: - Verification overhead: &lt;10ms
-(target &lt;5ms) for 95% of operations - AI accuracy: &gt;90% on test
-dataset (target &gt;95%) - False positive rate: &lt;0.1% - Integration
-test pass rate: 100%</p>
-<p><strong>User Metrics</strong>: - Beta tester activation: &gt;80%
-actively using software - Satisfaction score: &gt;4.0/5.0 (target
-&gt;4.5/5.0) - Net Promoter Score: &gt;30 (target &gt;50) - Support
-tickets: &lt;5 per beta user</p>
-<p><strong>Value Demonstration</strong>: - Documented error cases: &gt;3
-(target &gt;5) where verification caught real measurement errors - Time
-savings: &gt;20% reduction in data validation time (user-reported) -
-Confidence improvement: &gt;30% of users report increased confidence in
-results</p>
-<p><strong>Commercial Indicators</strong>: - Pricing acceptance: &gt;60%
-find proposed pricing acceptable - Purchase intent: &gt;40% likelihood
-to purchase - Feature completeness: &gt;70% of requested features
-implemented or roadmapped</p>
-<p><strong>Partnership Health</strong>: - SRS resource allocation: On
-track with committed levels (0.5 FTE average Phase 1) - Stakeholder
-engagement: Weekly technical reviews attended; monthly executive updates
-positive - Beta site recruitment: 3-5 sites secured through SRS customer
-relationships</p>
+<p><strong>Technical Metrics</strong>:</p>
+<ul>
+<li>Verification overhead: &lt;10ms (target &lt;5ms) for 95% of
+operations</li>
+<li>AI accuracy: &gt;90% on test dataset (target &gt;95%)</li>
+<li>False positive rate: &lt;0.1%</li>
+<li>Integration test pass rate: 100%</li>
+</ul>
+<p><strong>User Metrics</strong>:</p>
+<ul>
+<li>Beta tester activation: &gt;80% actively using software</li>
+<li>Satisfaction score: &gt;4.0/5.0 (target &gt;4.5/5.0)</li>
+<li>Net Promoter Score: &gt;30 (target &gt;50)</li>
+<li>Support tickets: &lt;5 per beta user</li>
+</ul>
+<p><strong>Value Demonstration</strong>:</p>
+<ul>
+<li>Documented error cases: &gt;3 (target &gt;5) where verification
+caught real measurement errors</li>
+<li>Time savings: &gt;20% reduction in data validation time
+(user-reported)</li>
+<li>Confidence improvement: &gt;30% of users report increased confidence
+in results</li>
+</ul>
+<p><strong>Commercial Indicators</strong>:</p>
+<ul>
+<li>Pricing acceptance: &gt;60% find proposed pricing acceptable</li>
+<li>Purchase intent: &gt;40% likelihood to purchase</li>
+<li>Feature completeness: &gt;70% of requested features implemented or
+roadmapped</li>
+</ul>
+<p><strong>Partnership Health</strong>:</p>
+<ul>
+<li>SRS resource allocation: On track with committed levels (0.5 FTE
+average Phase 1)</li>
+<li>Stakeholder engagement: Weekly technical reviews attended; monthly
+executive updates positive</li>
+<li>Beta site recruitment: 3-5 sites secured through SRS customer
+relationships</li>
+</ul>
 <h3 id="long-term-vision">Long-Term Vision</h3>
 <p><strong>Year 1-2</strong>: Category leadership in AI-verified
 scientific instrument analysis - 30-50 customers across pharmaceutical,
@@ -2400,24 +2726,39 @@ weekly technical reviews (Hupyy-SRS joint) and monthly executive updates
 - Create communication plan for stakeholders</p>
 <h3 id="phase-1-kickoff-month-1-week-1">Phase 1 Kickoff (Month 1, Week
 1)</h3>
-<p><strong>Joint Hupyy-SRS Kickoff Meeting</strong>: - Attendees: Hupyy
-engineering team (2 FTE), SRS SR860 product engineer, Hupyy leadership,
-SRS product management - Agenda: - Partnership agreement review and
-signatures (if not completed) - Phase 1 objectives and success criteria
-alignment - Technical deep dive: SR860 DSP algorithms, Python drivers,
-verification requirements - Beta site status and recruitment plan -
-Communication protocols and decision-making authority - Risk register
-review and mitigation strategies</p>
-<p><strong>Week 1-2 Deliverables</strong>: - Project charter signed by
-both parties - Requirements baseline documented - SR860 reference
-datasets transferred to Hupyy team - Beta site commitments secured (3-5
-sites)</p>
-<p><strong>Week 3-4 Critical POC</strong>: - Implement proof-of-concept
-verification for representative SR860 operations - Measure actual
-overhead (target &lt;5ms for 50% margin below 10ms threshold) - Demo to
-SRS stakeholders for early validation - Go/no-go checkpoint: If POC
-shows &gt;20ms overhead, trigger contingency planning (architecture
-pivot, timeline extension, or project scope adjustment)</p>
+<p><strong>Joint Hupyy-SRS Kickoff Meeting</strong>:</p>
+<ul>
+<li>Attendees: Hupyy engineering team (2 FTE), SRS SR860 product
+engineer, Hupyy leadership, SRS product management</li>
+<li>Agenda:
+<ul>
+<li>Partnership agreement review and signatures (if not completed)</li>
+<li>Phase 1 objectives and success criteria alignment</li>
+<li>Technical deep dive: SR860 DSP algorithms, Python drivers,
+verification requirements</li>
+<li>Beta site status and recruitment plan</li>
+<li>Communication protocols and decision-making authority</li>
+<li>Risk register review and mitigation strategies</li>
+</ul></li>
+</ul>
+<p><strong>Week 1-2 Deliverables</strong>:</p>
+<ul>
+<li>Project charter signed by both parties</li>
+<li>Requirements baseline documented</li>
+<li>SR860 reference datasets transferred to Hupyy team</li>
+<li>Beta site commitments secured (3-5 sites)</li>
+</ul>
+<p><strong>Week 3-4 Critical POC</strong>:</p>
+<ul>
+<li>Implement proof-of-concept verification for representative SR860
+operations</li>
+<li>Measure actual overhead (target &lt;5ms for 50% margin below 10ms
+threshold)</li>
+<li>Demo to SRS stakeholders for early validation</li>
+<li>Go/no-go checkpoint: If POC shows &gt;20ms overhead, trigger
+contingency planning (architecture pivot, timeline extension, or project
+scope adjustment)</li>
+</ul>
 <h3 id="communication-and-governance">Communication and Governance</h3>
 <p><strong>Weekly Technical Reviews</strong> (Hupyy-SRS Engineering): -
 Progress against milestones - Technical challenges and resolution plans
@@ -2436,26 +2777,39 @@ expansion) - Product roadmap prioritization - Investment decisions
 partnerships)</p>
 <h3 id="decision-gates-and-checkpoints">Decision Gates and
 Checkpoints</h3>
-<p><strong>Phase 1 Gate (Month 4)</strong>: - <strong>Decision</strong>:
-GO / CONDITIONAL GO / NO-GO to Phase 2-3 - <strong>Evaluation</strong>:
-Comprehensive assessment against success criteria (technical, user,
-commercial, strategic) - <strong>Documentation</strong>: Pilot
-assessment report, Phase 2-3 business case update, risk mitigation plan
-- <strong>Attendees</strong>: Hupyy leadership, SRS product management,
-joint steering committee</p>
-<p><strong>Phase 2 Gate (Month 7)</strong>: - <strong>Decision</strong>:
-Validate Phase 3 resource plan and scope - <strong>Evaluation</strong>:
-Code reuse rates, development velocity, customer acquisition, revenue
-performance - <strong>Documentation</strong>: Phase 2 results report,
-Phase 3 execution plan update - <strong>Attendees</strong>: Hupyy
-leadership, SRS product management</p>
-<p><strong>Phase 3 Gate (Month 13)</strong>: -
-<strong>Decision</strong>: Confirm steady-state operations transition -
-<strong>Evaluation</strong>: Product portfolio completeness, revenue
-traction, operations team readiness - <strong>Documentation</strong>:
-Commercial launch report, Year 2 business plan, regulatory certification
-roadmap - <strong>Attendees</strong>: Hupyy leadership, SRS product
-management, joint steering committee</p>
+<p><strong>Phase 1 Gate (Month 4)</strong>:</p>
+<ul>
+<li><strong>Decision</strong>: GO / CONDITIONAL GO / NO-GO to Phase
+2-3</li>
+<li><strong>Evaluation</strong>: Comprehensive assessment against
+success criteria (technical, user, commercial, strategic)</li>
+<li><strong>Documentation</strong>: Pilot assessment report, Phase 2-3
+business case update, risk mitigation plan</li>
+<li><strong>Attendees</strong>: Hupyy leadership, SRS product
+management, joint steering committee</li>
+</ul>
+<p><strong>Phase 2 Gate (Month 7)</strong>:</p>
+<ul>
+<li><strong>Decision</strong>: Validate Phase 3 resource plan and
+scope</li>
+<li><strong>Evaluation</strong>: Code reuse rates, development velocity,
+customer acquisition, revenue performance</li>
+<li><strong>Documentation</strong>: Phase 2 results report, Phase 3
+execution plan update</li>
+<li><strong>Attendees</strong>: Hupyy leadership, SRS product
+management</li>
+</ul>
+<p><strong>Phase 3 Gate (Month 13)</strong>:</p>
+<ul>
+<li><strong>Decision</strong>: Confirm steady-state operations
+transition</li>
+<li><strong>Evaluation</strong>: Product portfolio completeness, revenue
+traction, operations team readiness</li>
+<li><strong>Documentation</strong>: Commercial launch report, Year 2
+business plan, regulatory certification roadmap</li>
+<li><strong>Attendees</strong>: Hupyy leadership, SRS product
+management, joint steering committee</li>
+</ul>
 <h3 id="success-definition">Success Definition</h3>
 <p><strong>Phase 1 Success</strong> = Validation of core assumptions
 enabling confident Phase 2-3 investment - <strong>Technical</strong>:
@@ -2509,63 +2863,97 @@ Partnership structure and models 6. Risk mitigation and contingency
 plans</p>
 <h3 id="appendix-b-key-assumptions-and-sensitivities">Appendix B: Key
 Assumptions and Sensitivities</h3>
-<p><strong>Market Assumptions</strong>: - TAM growth 7.5-8.5% CAGR
-(sensitivity: ±2% impacts 5-year SOM by ±15%) - SAM verified analysis
-category growth 15-20% CAGR (sensitivity: ±5% impacts revenue
-projections by ±25%) - Market penetration 5% of SAM by Year 5
-(sensitivity: 3-7% range impacts SOM $29M-67M)</p>
-<p><strong>Technical Assumptions</strong>: - Verification overhead
-&lt;10ms for 95% of operations (critical assumption; &gt;20ms triggers
-pivot) - Code reuse &gt;70% across product families (sensitivity: 50-80%
-range impacts Phase 3 cost $400K-650K) - AI accuracy &gt;90% on test
-dataset (sensitivity: 80-95% range impacts user satisfaction and
-adoption)</p>
-<p><strong>Partnership Assumptions</strong>: - SRS resource allocation
-0.5-2.0 FTE sustained throughout phases (critical assumption; &lt;0.25
-FTE triggers contingency) - Beta site access through SRS customer
-relationships (sensitivity: 3-5 sites minimum; &lt;3 extends timeline) -
-White-label bundling opportunity by Phase 3 exit (upside scenario; not
-baseline)</p>
-<p><strong>Financial Assumptions</strong>: - Gross margin 85-90%
-(sensitivity: 75-90% range impacts break-even by ±3 months) - Customer
-LTV $60K-100K (sensitivity: $40K-120K range impacts LTV/CAC ratio 3-9×)
-- CAC $10K-15K (sensitivity: $5K-25K based on SRS partnership
-effectiveness)</p>
-<p><strong>Regulatory Assumptions</strong>: - Phase 1 certifications
-sufficient for pharmaceutical/laboratory markets (validated assumption)
-- FDA 510(k) success probability 70-80% first submission (industry
-benchmark; additional iteration may be required) - Regulatory timelines
-per industry standards (18-24 months FDA 510(k); sensitivity: ±6 months
-impacts market entry)</p>
+<p><strong>Market Assumptions</strong>:</p>
+<ul>
+<li>TAM growth 7.5-8.5% CAGR (sensitivity: ±2% impacts 5-year SOM by
+±15%)</li>
+<li>SAM verified analysis category growth 15-20% CAGR (sensitivity: ±5%
+impacts revenue projections by ±25%)</li>
+<li>Market penetration 5% of SAM by Year 5 (sensitivity: 3-7% range
+impacts SOM $29M-67M)</li>
+</ul>
+<p><strong>Technical Assumptions</strong>:</p>
+<ul>
+<li>Verification overhead &lt;10ms for 95% of operations (critical
+assumption; &gt;20ms triggers pivot)</li>
+<li>Code reuse &gt;70% across product families (sensitivity: 50-80%
+range impacts Phase 3 cost $400K-650K)</li>
+<li>AI accuracy &gt;90% on test dataset (sensitivity: 80-95% range
+impacts user satisfaction and adoption)</li>
+</ul>
+<p><strong>Partnership Assumptions</strong>:</p>
+<ul>
+<li>SRS resource allocation 0.5-2.0 FTE sustained throughout phases
+(critical assumption; &lt;0.25 FTE triggers contingency)</li>
+<li>Beta site access through SRS customer relationships (sensitivity:
+3-5 sites minimum; &lt;3 extends timeline)</li>
+<li>White-label bundling opportunity by Phase 3 exit (upside scenario;
+not baseline)</li>
+</ul>
+<p><strong>Financial Assumptions</strong>:</p>
+<ul>
+<li>Gross margin 85-90% (sensitivity: 75-90% range impacts break-even by
+±3 months)</li>
+<li>Customer LTV $60K-100K (sensitivity: $40K-120K range impacts LTV/CAC
+ratio 3-9×)</li>
+<li>CAC $10K-15K (sensitivity: $5K-25K based on SRS partnership
+effectiveness)</li>
+</ul>
+<p><strong>Regulatory Assumptions</strong>:</p>
+<ul>
+<li>Phase 1 certifications sufficient for pharmaceutical/laboratory
+markets (validated assumption)</li>
+<li>FDA 510(k) success probability 70-80% first submission (industry
+benchmark; additional iteration may be required)</li>
+<li>Regulatory timelines per industry standards (18-24 months FDA
+510(k); sensitivity: ±6 months impacts market entry)</li>
+</ul>
 <h3 id="appendix-c-references-and-citations">Appendix C: References and
 Citations</h3>
-<p><strong>Market Research</strong>: - Verified Market Reports (2024).
-Laboratory Data Management and Analysis Software Market - Business
-Research Insights (2024). Scientific Data Management System Software
-Market - Data Bridge Market Research (2024). Global Test and Measurement
-Equipment Market - IMARC Group (2024). Scientific Instrument Market -
-Grand View Research (2024). Laboratory Information Management System
-Market</p>
-<p><strong>Regulatory Standards</strong>: - FDA (2024). 21 CFR Part 11
-Electronic Records and Electronic Signatures - ISO/IEC 17025:2017.
-General requirements for the competence of testing and calibration
-laboratories - IEC 62304:2015. Medical device software - Software life
-cycle processes - ISO 13485:2016. Medical devices - Quality management
-systems - RTCA DO-178C (2011). Software Considerations in Airborne
-Systems and Equipment Certification</p>
-<p><strong>Technical Research</strong>: - de Moura, L., &amp; Bjørner,
-N. (2008). Z3: An efficient SMT solver. Tools and Algorithms for the
-Construction and Analysis of Systems - Stanford Research Systems (2024).
-SR860 Lock-In Amplifier Technical Documentation -
-NumPy/SciPy/PyTorch/TensorFlow Official Documentation - Concordia
-University Hardware Verification Group (2003). HOL Framework for DSP
-Verification</p>
-<p><strong>Business and Strategy</strong>: - Blank, S., &amp; Dorf, B.
-(2012). The Startup Owner’s Manual - Ries, E. (2011). The Lean Startup -
-Christensen, C. M. (1997). The Innovator’s Dilemma - SaaS Capital
-(2024). SaaS Survey Results: Private Company Performance Benchmarks -
-Skok, D. (2024). SaaS Metrics 2.0 - A Guide to Measuring and Improving
-What Matters</p>
+<p><strong>Market Research</strong>:</p>
+<ul>
+<li>Verified Market Reports (2024). Laboratory Data Management and
+Analysis Software Market</li>
+<li>Business Research Insights (2024). Scientific Data Management System
+Software Market</li>
+<li>Data Bridge Market Research (2024). Global Test and Measurement
+Equipment Market</li>
+<li>IMARC Group (2024). Scientific Instrument Market</li>
+<li>Grand View Research (2024). Laboratory Information Management System
+Market</li>
+</ul>
+<p><strong>Regulatory Standards</strong>:</p>
+<ul>
+<li>FDA (2024). 21 CFR Part 11 Electronic Records and Electronic
+Signatures</li>
+<li>ISO/IEC 17025:2017. General requirements for the competence of
+testing and calibration laboratories</li>
+<li>IEC 62304:2015. Medical device software - Software life cycle
+processes</li>
+<li>ISO 13485:2016. Medical devices - Quality management systems</li>
+<li>RTCA DO-178C (2011). Software Considerations in Airborne Systems and
+Equipment Certification</li>
+</ul>
+<p><strong>Technical Research</strong>:</p>
+<ul>
+<li>de Moura, L., &amp; Bjørner, N. (2008). Z3: An efficient SMT solver.
+Tools and Algorithms for the Construction and Analysis of Systems</li>
+<li>Stanford Research Systems (2024). SR860 Lock-In Amplifier Technical
+Documentation</li>
+<li>NumPy/SciPy/PyTorch/TensorFlow Official Documentation</li>
+<li>Concordia University Hardware Verification Group (2003). HOL
+Framework for DSP Verification</li>
+</ul>
+<p><strong>Business and Strategy</strong>:</p>
+<ul>
+<li>Blank, S., &amp; Dorf, B. (2012). The Startup Owner’s Manual</li>
+<li>Ries, E. (2011). The Lean Startup</li>
+<li>Christensen, C. M. (1997). The Innovator’s Dilemma</li>
+<li>SaaS Capital (2024). SaaS Survey Results: Private Company
+Performance Benchmarks</li>
+<li>Skok, D. (2024). SaaS Metrics 2.0 - A Guide to Measuring and
+Improving What Matters</li>
+</ul>
 <hr />
 <p><strong>END OF STRATEGIC OPPORTUNITY ASSESSMENT</strong></p>
 <p><strong>Report Prepared By</strong>: report-synthesizer agent

@@ -36,8 +36,8 @@ echo ""
 mkdir -p "$OUTPUT_DIR"
 
 # Extract project info from config
-PROJECT_NAME=$(grep "^project_name:" "$CONFIG_FILE" 2>/dev/null | cut -d: -f2- | sed 's/^[[:space:]]*//' || echo "Strategic Research")
-INDUSTRY=$(grep "^industry:" "$CONFIG_FILE" 2>/dev/null | cut -d: -f2- | sed 's/^[[:space:]]*//' | sed 's/"//g' || echo "Technology")
+PROJECT_NAME=$(grep "name:" "$CONFIG_FILE" | grep -v "^#" | head -1 | cut -d: -f2- | sed 's/^[[:space:]]*"//' | sed 's/".*$//' | sed 's/#.*//' | xargs || echo "Strategic Research")
+INDUSTRY=$(grep "industry:" "$CONFIG_FILE" | grep -v "^#" | head -1 | cut -d: -f2- | sed 's/^[[:space:]]*"//' | sed 's/".*$//' | sed 's/#.*//' | xargs || echo "Technology")
 # Clean up template placeholders if config wasn't initialized
 INDUSTRY=$(echo "$INDUSTRY" | sed 's/{{.*}}/Technology/g')
 
@@ -237,18 +237,22 @@ cat > "$OUTPUT_DIR/index.html" << 'EOF'
 
         .report-links {
             display: flex;
-            gap: 10px;
+            flex-wrap: wrap;
+            gap: 8px;
             margin-top: 20px;
         }
 
         .btn {
-            flex: 1;
-            padding: 10px 20px;
+            flex: 1 1 auto;
+            min-width: 0;
+            padding: 8px 12px;
             border-radius: 6px;
             text-decoration: none;
             text-align: center;
             font-weight: 600;
+            font-size: 0.9em;
             transition: all 0.3s ease;
+            white-space: nowrap;
         }
 
         .btn-primary {
@@ -423,6 +427,7 @@ for report in "$REPORTS_DIR"/sprint-*-final-report.md; do
                     <div class="report-links">
                         <a href="reports/sprint-$(printf "%02d" "$sprint_num")-final-report.html" class="btn btn-primary">View Report</a>
                         <a href="reports/sprint-$(printf "%02d" "$sprint_num")-final-report.pdf" class="btn btn-secondary">PDF</a>
+                        <a href="reports/sprint-$(printf "%02d" "$sprint_num")-final-report.docx" class="btn btn-secondary">DOCX</a>
                         <a href="reports/sprint-$(printf "%02d" "$sprint_num")-final-report.md" class="btn btn-secondary">Markdown</a>
                     </div>
                 </div>
