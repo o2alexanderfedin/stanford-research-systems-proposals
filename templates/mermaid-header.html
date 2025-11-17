@@ -1,0 +1,35 @@
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+
+  // Unwrap code elements inside pre.mermaid (Pandoc wraps them)
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('pre.mermaid > code').forEach(function(code) {
+      const pre = code.parentElement;
+      pre.textContent = code.textContent;
+      pre.classList.add('mermaid');
+      pre.classList.remove('sourceCode');
+    });
+  });
+
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'default',
+    securityLevel: 'loose'
+  });
+</script>
+<style>
+  .mermaid {
+    background-color: white;
+    text-align: center;
+    margin: 2em 0;
+  }
+  pre.mermaid {
+    background-color: transparent;
+    border: none;
+    padding: 20px;
+  }
+  /* Ensure mermaid diagrams are visible during rendering */
+  pre.mermaid code {
+    display: none;
+  }
+</style>

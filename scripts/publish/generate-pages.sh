@@ -37,7 +37,9 @@ mkdir -p "$OUTPUT_DIR"
 
 # Extract project info from config
 PROJECT_NAME=$(grep "^project_name:" "$CONFIG_FILE" 2>/dev/null | cut -d: -f2- | sed 's/^[[:space:]]*//' || echo "Strategic Research")
-INDUSTRY=$(grep "^industry:" "$CONFIG_FILE" 2>/dev/null | cut -d: -f2- | sed 's/^[[:space:]]*//' || echo "Technology")
+INDUSTRY=$(grep "^industry:" "$CONFIG_FILE" 2>/dev/null | cut -d: -f2- | sed 's/^[[:space:]]*//' | sed 's/"//g' || echo "Technology")
+# Clean up template placeholders if config wasn't initialized
+INDUSTRY=$(echo "$INDUSTRY" | sed 's/{{.*}}/Technology/g')
 
 # Count sprints and research files
 SPRINT_COUNT=$(find "$REPORTS_DIR" -maxdepth 1 -name "sprint-*-final-report.md" -type f 2>/dev/null | wc -l | tr -d ' ')
@@ -305,6 +307,16 @@ cat > "$OUTPUT_DIR/index.html" << 'EOF'
             }
         }
     </style>
+
+    <!-- Mermaid.js for rendering diagrams -->
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            securityLevel: 'loose'
+        });
+    </script>
 </head>
 <body>
     <div class="container">
@@ -368,7 +380,8 @@ for report in "$REPORTS_DIR"/sprint-*-final-report.md; do
 
     # Read the report to extract metadata
     title=$(grep "^# " "$report" | head -1 | sed 's/^# //' || echo "Sprint $sprint_num")
-    description=$(grep -A 5 "## Executive Summary" "$report" | tail -4 | head -1 || echo "Strategic research analysis")
+    # Extract description - skip markdown headings and blank lines to get actual content
+    description=$(grep -A 20 "## Executive Summary" "$report" | grep -v "^#" | grep -v "^$" | grep -v "^\*\*" | head -1 || echo "Strategic research analysis")
 
     # Extract score if available
     score=$(grep -i "score:" "$report" | grep -o '[0-9]\+' | head -1 || echo "75")
@@ -461,16 +474,21 @@ fi
 # Format TAM (round to nearest billion)
 total_tam_rounded=$(echo "$TOTAL_TAM" | awk '{print int($1+0.5)}')
 
-# Update the HTML with actual values (using portable sed syntax)
-if [[ "$OSTYPE" == "darwin"* ]]; then
-    # macOS sed
-    sed -i '' "s|id=\"total-tam\">\$0B+|id=\"total-tam\">\$$total_tam_rounded B+|" "$OUTPUT_DIR/index.html"
-    sed -i '' "s|id=\"avg-score\">0/100|id=\"avg-score\">$avg_score/100|" "$OUTPUT_DIR/index.html"
-else
+# Update the HTML with actual values
+# Use portable sed syntax for both macOS and Linux
+if sed --version >/dev/null 2>&1; then
     # GNU sed (Linux)
-    sed -i "s|id=\"total-tam\">\$0B+|id=\"total-tam\">\$$total_tam_rounded B+|" "$OUTPUT_DIR/index.html"
-    sed -i "s|id=\"avg-score\">0/100|id=\"avg-score\">$avg_score/100|" "$OUTPUT_DIR/index.html"
+    sed -i 's/id="total-tam">\$0B+/id="total-tam">$'"$total_tam_rounded"' B+/' "$OUTPUT_DIR/index.html"
+    sed -i 's/id="avg-score">0\/100/id="avg-score">'"$avg_score"'\/100/' "$OUTPUT_DIR/index.html"
+else
+    # BSD sed (macOS)
+    sed -i.bak 's/id="total-tam">\$0B+/id="total-tam">$'"$total_tam_rounded"' B+/' "$OUTPUT_DIR/index.html"
+    sed -i.bak 's/id="avg-score">0\/100/id="avg-score">'"$avg_score"'\/100/' "$OUTPUT_DIR/index.html"
+    rm -f "$OUTPUT_DIR/index.html.bak"
 fi
+
+# Create .nojekyll file to disable Jekyll processing on GitHub Pages
+touch "$OUTPUT_DIR/.nojekyll"
 
 echo ""
 echo -e "${GREEN}╔════════════════════════════════════════════════════╗${NC}"
@@ -478,6 +496,7 @@ echo -e "${GREEN}║  ✓ GitHub Pages Generated Successfully!          ║${NC}
 echo -e "${GREEN}╚════════════════════════════════════════════════════╝${NC}"
 echo ""
 echo -e "${BOLD}Output:${NC} $OUTPUT_DIR/index.html"
+echo -e "${BOLD}Jekyll disabled:${NC} $OUTPUT_DIR/.nojekyll created"
 echo -e "${BOLD}Sprints:${NC} $SPRINT_COUNT"
 echo -e "${BOLD}Research Files:${NC} $RESEARCH_FILE_COUNT+"
 echo -e "${BOLD}Total TAM:${NC} \$${total_tam_rounded}B+"
@@ -485,6 +504,6 @@ echo -e "${BOLD}Average Score:${NC} $avg_score/100"
 echo ""
 echo -e "${YELLOW}Next steps:${NC}"
 echo "1. Review the generated index.html"
-echo "2. Copy to your GitHub Pages repository"
-echo "3. Or use the /publish-pages command to auto-deploy"
+echo "2. Enable GitHub Pages: Settings → Pages → Source: main, /docs"
+echo "3. Site will be live at: https://<username>.github.io/<repo>/"
 echo ""

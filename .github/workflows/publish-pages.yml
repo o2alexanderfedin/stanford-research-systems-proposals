@@ -29,19 +29,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate landing page
+      # NOTE: index.html and reports are now committed to docs/ directory
+      # No need to generate or copy - they're version controlled
+      - name: Verify docs directory
         run: |
-          chmod +x scripts/publish/generate-pages.sh
-          ./scripts/publish/generate-pages.sh
-
-      - name: Copy reports to docs directory
-        run: |
-          mkdir -p docs/reports
-          # Copy all final reports in various formats
-          find reports -name "sprint-*-final-report.*" -type f -exec cp {} docs/reports/ \; || true
-
-          echo "✓ Copied reports to docs directory"
-          ls -lh docs/reports/ || echo "No reports found"
+          echo "✓ Verifying docs directory contents"
+          ls -lh docs/
+          echo ""
+          echo "✓ Verifying reports directory"
+          ls -lh docs/reports/ || echo "No reports directory found"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
