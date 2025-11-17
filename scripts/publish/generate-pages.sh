@@ -461,10 +461,16 @@ fi
 # Format TAM (round to nearest billion)
 total_tam_rounded=$(echo "$TOTAL_TAM" | awk '{print int($1+0.5)}')
 
-# Update the HTML with actual values
-sed -i.bak "s/id=\"total-tam\">\\$0B+/id=\"total-tam\">\$$total_tam_rounded B+/" "$OUTPUT_DIR/index.html"
-sed -i.bak "s/id=\"avg-score\">0\/100/id=\"avg-score\">$avg_score\/100/" "$OUTPUT_DIR/index.html"
-rm -f "$OUTPUT_DIR/index.html.bak"
+# Update the HTML with actual values (using portable sed syntax)
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    # macOS sed
+    sed -i '' "s|id=\"total-tam\">\$0B+|id=\"total-tam\">\$$total_tam_rounded B+|" "$OUTPUT_DIR/index.html"
+    sed -i '' "s|id=\"avg-score\">0/100|id=\"avg-score\">$avg_score/100|" "$OUTPUT_DIR/index.html"
+else
+    # GNU sed (Linux)
+    sed -i "s|id=\"total-tam\">\$0B+|id=\"total-tam\">\$$total_tam_rounded B+|" "$OUTPUT_DIR/index.html"
+    sed -i "s|id=\"avg-score\">0/100|id=\"avg-score\">$avg_score/100|" "$OUTPUT_DIR/index.html"
+fi
 
 echo ""
 echo -e "${GREEN}╔════════════════════════════════════════════════════╗${NC}"
