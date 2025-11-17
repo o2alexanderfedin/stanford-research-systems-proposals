@@ -36,8 +36,8 @@ echo ""
 mkdir -p "$OUTPUT_DIR"
 
 # Extract project info from config
-PROJECT_NAME=$(grep "^project_name:" "$CONFIG_FILE" 2>/dev/null | cut -d: -f2- | sed 's/^[[:space:]]*//' || echo "Strategic Research")
-INDUSTRY=$(grep "^industry:" "$CONFIG_FILE" 2>/dev/null | cut -d: -f2- | sed 's/^[[:space:]]*//' || echo "Technology")
+PROJECT_NAME=$(grep "name:" "$CONFIG_FILE" | grep -v "^#" | head -1 | cut -d: -f2- | sed 's/^[[:space:]]*"//' | sed 's/".*$//' | sed 's/#.*//' | xargs || echo "Strategic Research")
+INDUSTRY=$(grep "industry:" "$CONFIG_FILE" | grep -v "^#" | head -1 | cut -d: -f2- | sed 's/^[[:space:]]*"//' | sed 's/".*$//' | sed 's/#.*//' | xargs || echo "Technology")
 
 # Count sprints and research files
 SPRINT_COUNT=$(find "$REPORTS_DIR" -maxdepth 1 -name "sprint-*-final-report.md" -type f 2>/dev/null | wc -l | tr -d ' ')
