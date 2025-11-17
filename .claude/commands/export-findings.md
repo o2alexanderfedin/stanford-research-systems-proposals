@@ -52,7 +52,7 @@ pandoc reports/$1-*-report.md -o reports/$1-*-report.docx \
 For HTML:
 ```bash
 pandoc reports/$1-*-report.md -o reports/$1-*-report.html \
-  --from markdown+hard_line_breaks \
+  --from markdown \
   --standalone \
   --toc \
   --embed-resources \
