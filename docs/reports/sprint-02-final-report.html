@@ -665,28 +665,28 @@ than average feasibility)</p>
 <p><strong>High-Level Architecture</strong> (Verification-First
 Design):</p>
 <pre class="mermaid"><code>graph TB
-    subgraph &quot;Calibration Environment&quot;
-        INST[Precision Instruments]
-        CAL_SW[Existing Calibration Software]
+    subgraph CalibEnv[&quot;Calibration Environment&quot;]
+        INST[&quot;Precision Instruments&quot;]
+        CAL_SW[&quot;Existing Calibration Software&quot;]
     end
 
-    subgraph &quot;ACVS Verification Engine&quot;
-        MODEL[SMT Model Builder]
-        SOLVER[Solver Pool: Z3/CVC5]
-        PROOF[Proof Validator]
-        CACHE[Verification Cache]
+    subgraph VerifEngine[&quot;ACVS Verification Engine&quot;]
+        MODEL[&quot;SMT Model Builder&quot;]
+        SOLVER[&quot;Solver Pool: Z3/CVC5&quot;]
+        PROOF[&quot;Proof Validator&quot;]
+        CACHE[&quot;Verification Cache&quot;]
     end
 
-    subgraph &quot;Certificate Generation&quot;
-        CERT[Certificate Generator]
-        SIGN[Digital Signature]
-        BLOCKCHAIN[Certificate Registry]
+    subgraph CertGen[&quot;Certificate Generation&quot;]
+        CERT[&quot;Certificate Generator&quot;]
+        SIGN[&quot;Digital Signature&quot;]
+        BLOCKCHAIN[&quot;Certificate Registry&quot;]
     end
 
-    subgraph &quot;Data Layer&quot;
-        TIME_DB[(Time-Series: Calibration History)]
-        DOC_DB[(Document Store: Certificates &amp; Proofs)]
-        GRAPH_DB[(Graph DB: Traceability Chain)]
+    subgraph DataLayer[&quot;Data Layer&quot;]
+        TIME_DB[(&quot;Time-Series: Calibration History&quot;)]
+        DOC_DB[(&quot;Document Store: Certificates &amp; Proofs&quot;)]
+        GRAPH_DB[(&quot;Graph DB: Traceability Chain&quot;)]
     end
 
     INST --&gt; MODEL
