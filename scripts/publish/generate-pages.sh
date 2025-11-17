@@ -423,6 +423,7 @@ for report in "$REPORTS_DIR"/sprint-*-final-report.md; do
                     <div class="report-links">
                         <a href="reports/sprint-$(printf "%02d" "$sprint_num")-final-report.html" class="btn btn-primary">View Report</a>
                         <a href="reports/sprint-$(printf "%02d" "$sprint_num")-final-report.pdf" class="btn btn-secondary">PDF</a>
+                        <a href="reports/sprint-$(printf "%02d" "$sprint_num")-final-report.docx" class="btn btn-secondary">DOCX</a>
                         <a href="reports/sprint-$(printf "%02d" "$sprint_num")-final-report.md" class="btn btn-secondary">Markdown</a>
                     </div>
                 </div>

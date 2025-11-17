@@ -33,6 +33,7 @@ For PDF:
 ```bash
 pandoc reports/$1-*-report.md -o reports/$1-*-report.pdf \
   --pdf-engine=xelatex \
+  --lua-filter=templates/mermaid-filter.lua \
   --toc \
   --number-sections \
   --metadata title="Strategic Research Report: Sprint $1" \
@@ -42,6 +43,7 @@ pandoc reports/$1-*-report.md -o reports/$1-*-report.pdf \
 For DOCX:
 ```bash
 pandoc reports/$1-*-report.md -o reports/$1-*-report.docx \
+  --lua-filter=templates/mermaid-filter.lua \
   --toc \
   --number-sections \
   --reference-doc=templates/report-template.docx
