@@ -331,6 +331,13 @@ EOF
 cat >> "$OUTPUT_DIR/index.html" << EOF
             <h1>$PROJECT_NAME</h1>
             <p>AI-Powered Strategic Research &amp; Analysis</p>
+            <p style="margin-top: 15px;">
+                <a href="https://github.com/o2alexanderfedin/stanford-research-systems-proposals"
+                   target="_blank"
+                   style="color: white; text-decoration: none; opacity: 0.9; font-size: 0.9em; border: 1px solid rgba(255,255,255,0.3); padding: 8px 16px; border-radius: 4px; display: inline-block; transition: all 0.3s ease;">
+                    📂 View Repository on GitHub
+                </a>
+            </p>
 EOF
 
 cat >> "$OUTPUT_DIR/index.html" << 'EOF'

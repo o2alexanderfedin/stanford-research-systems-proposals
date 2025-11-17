@@ -40,6 +40,8 @@ cd strategic-research-automation-template
 **Time**: 2-6 hours completely unattended after initial questions
 **Output**: 3-10 strategic reports with scoring, PDFs, 25+ research files each, and a live published landing page
 
+📊 **[View Live Example Reports →](https://o2alexanderfedin.github.io/stanford-research-systems-proposals/)**
+
 [Advanced Usage](#documentation) • [Customization](#customization) • [Examples](#examples)
 
 ---
