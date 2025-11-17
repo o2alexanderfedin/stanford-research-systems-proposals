@@ -10,7 +10,7 @@ set -e
 # Configuration
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
-OUTPUT_DIR="${1:-$PROJECT_ROOT/docs/pages}"
+OUTPUT_DIR="${1:-$PROJECT_ROOT/docs}"
 REPORTS_DIR="$PROJECT_ROOT/reports"
 CONFIG_FILE="$PROJECT_ROOT/config/project-config.yml"
 
