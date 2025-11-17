@@ -367,7 +367,7 @@ for report in "$REPORTS_DIR"/sprint-*-final-report.md; do
     sprint_num=$(echo "$filename" | grep -o 'sprint-[0-9]*' | grep -o '[0-9]*')
 
     # Read the report to extract metadata
-    title=$(grep "^# " "$report" | head -1 | sed 's/^# //' || echo "Sprint $sprint_num")
+    title=$(grep "^# " "$report" | head -1 | sed 's/^# //' | sed 's/^Sprint [0-9]*: //' | sed 's/^Final Strategic Report: //' || echo "Strategic Opportunity $sprint_num")
     description=$(grep -A 5 "## Executive Summary" "$report" | tail -4 | head -1 || echo "Strategic research analysis")
 
     # Extract score if available
@@ -399,7 +399,7 @@ for report in "$REPORTS_DIR"/sprint-*-final-report.md; do
     # Add card to HTML
     cat >> "$OUTPUT_DIR/index.html" << EOF
                 <div class="report-card">
-                    <h3>Sprint $(printf "%02d" "$sprint_num"): $title</h3>
+                    <h3>$title</h3>
                     <span class="score-badge">$score/100</span>
                     <span class="recommendation $rec_class">$recommendation</span>
                     <p>$description</p>
