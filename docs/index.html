@@ -181,18 +181,22 @@
 
         .report-links {
             display: flex;
-            gap: 10px;
+            flex-wrap: wrap;
+            gap: 8px;
             margin-top: 20px;
         }
 
         .btn {
-            flex: 1;
-            padding: 10px 20px;
+            flex: 1 1 auto;
+            min-width: 0;
+            padding: 8px 12px;
             border-radius: 6px;
             text-decoration: none;
             text-align: center;
             font-weight: 600;
+            font-size: 0.9em;
             transition: all 0.3s ease;
+            white-space: nowrap;
         }
 
         .btn-primary {
@@ -348,7 +352,7 @@
 
         <footer>
             <p>Generated with <a href="https://github.com/o2alexanderfedin/strategic-research-automation-template" target="_blank">Strategic Research Automation Template</a></p>
-            <p>Last updated: 2025-11-17 10:28:26 PST</p>
+            <p>Last updated: 2025-11-17 10:32:29 PST</p>
         </footer>
     </div>
 </body>

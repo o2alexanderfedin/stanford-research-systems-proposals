@@ -237,18 +237,22 @@ cat > "$OUTPUT_DIR/index.html" << 'EOF'
 
         .report-links {
             display: flex;
-            gap: 10px;
+            flex-wrap: wrap;
+            gap: 8px;
             margin-top: 20px;
         }
 
         .btn {
-            flex: 1;
-            padding: 10px 20px;
+            flex: 1 1 auto;
+            min-width: 0;
+            padding: 8px 12px;
             border-radius: 6px;
             text-decoration: none;
             text-align: center;
             font-weight: 600;
+            font-size: 0.9em;
             transition: all 0.3s ease;
+            white-space: nowrap;
         }
 
         .btn-primary {
