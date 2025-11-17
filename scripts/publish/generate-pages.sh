@@ -408,9 +408,9 @@ for report in "$REPORTS_DIR"/sprint-*-final-report.md; do
                         <strong>Industry:</strong> $INDUSTRY
                     </div>
                     <div class="report-links">
-                        <a href="../reports/sprint-$(printf "%02d" "$sprint_num")-final-report.html" class="btn btn-primary">View Report</a>
-                        <a href="../reports/sprint-$(printf "%02d" "$sprint_num")-final-report.pdf" class="btn btn-secondary">PDF</a>
-                        <a href="../reports/sprint-$(printf "%02d" "$sprint_num")-final-report.md" class="btn btn-secondary">Markdown</a>
+                        <a href="reports/sprint-$(printf "%02d" "$sprint_num")-final-report.html" class="btn btn-primary">View Report</a>
+                        <a href="reports/sprint-$(printf "%02d" "$sprint_num")-final-report.pdf" class="btn btn-secondary">PDF</a>
+                        <a href="reports/sprint-$(printf "%02d" "$sprint_num")-final-report.md" class="btn btn-secondary">Markdown</a>
                     </div>
                 </div>
 EOF
